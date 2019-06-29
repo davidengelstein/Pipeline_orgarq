@@ -1,0 +1,2 @@
+0 8 -- Endereço inicial (00) com 3 bits e número de palavras (08) a serem carregadas
+0F 1A 0B 1C 0D 1E 06 18 -- Conteúdo das oito palavras de 5 bits a carregar

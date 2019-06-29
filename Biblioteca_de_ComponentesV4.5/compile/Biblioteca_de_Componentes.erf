@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: .\..\compile\somasubabsmax.vhd" 
+MESSAGE "Compile Entity "somasubabsmax"" 
+MESSAGE "Compile Architecture "somasubabsmax" of Entity "somasubabsmax"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]" 

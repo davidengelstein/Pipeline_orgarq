@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>DRC Report File - deslocador.bde</TITLE>
+<STYLE>
+.Err	{color:#FF0000;cursor:hand;text-decoration:underline;}
+.Warn	{color:#0000FF;cursor:hand;text-decoration:underline;}
+.Info	{color:#000000;cursor:hand;text-decoration:underline;}
+.Sccss  {color:#009600;cursor:hand;text-decoration:underline;}
+.ErrH	{color:#FF0000;cursor:hand;text-decoration:underline;}
+.WarnH	{color:#0000FF;cursor:hand;text-decoration:underline;}
+.InfoH	{color:#000000;cursor:hand;text-decoration:underline;}
+.Err1	{color:#FF0000;}
+.Warn1	{color:#0000FF;}
+.Info1	{color:#000000;}
+.Sccss1 {color:#009600;}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" BACKGROUND="C:\Aldec\Active-HDL-Student-Edition\\Flows\Res\default.bmp">
+<FONT FACE="Serif">
+<tt>
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>DRC Report File - deslocador.bde</H2>
+
+Created on Thu 2018-02-01 at 16:01:23
+<HR NOSHADE COLOR="#008080">
+<SPAN class=Info1>Checking file 'C:\My_Designs\Biblioteca_de_ComponentesV4.5\src\deslocador.bde'.</SPAN><BR>
+<SPAN class=Warn onclick="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=0');">Diagram structure inconsistencies were encountered when loading &quot;C:\My_Designs\Biblioteca_de_ComponentesV4.5\src\deslocador.bde&quot;.</SPAN><BR>
+<SPAN class=Warn1>The file has been repaired and the backup copy has been saved to &quot;C:\My_Designs\Biblioteca_de_ComponentesV4.5\src\deslocador.bde.old&quot;.</SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Nets without source
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=20,160');>	'OutA' output bus terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=45,151');>	'SaiBit' output wire terminal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Nets without load
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=80');>	'Clk' input wire terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=30');>	'D_E' input wire terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=15,142');>	'InA' input bus terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=40');>	'InBit' input wire terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=35');>	'T_D' input wire terminal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Unconnected terminals
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=80');>	'Clk' input wire terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=30');>	'D_E' input wire terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=15,142');>	'InA' input bus terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=40');>	'InBit' input wire terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=20,160');>	'OutA' output bus terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=45,151');>	'SaiBit' output wire terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:\\My_Designs\\Biblioteca_de_ComponentesV4.5\\src\\deslocador.bde','','-errorid=35');>	'T_D' input wire terminal</a></li></ul></SPAN><BR>
+<SPAN class=Warn1>deslocador.bde - 0 error(s), 15 warning(s)</SPAN><BR>
+<SPAN class=Info1>DRC process completed in 1 second(s).</SPAN><BR>
+</tt>
+</FONT>
+       
+        </BODY>
+</HTML>

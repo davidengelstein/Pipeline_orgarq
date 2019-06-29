@@ -1,0 +1,32 @@
+Active-HDL 10.3.3559.6081  2018-03-25 16:39:48
+
+Elaboration top modules:
+Architecture                  testemem(TesteMem)
+
+
+-------------------------------------------------------------------------------------------------------------
+Entity   | Architecture | Library                   | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------------------------
+TesteMem | testemem     | biblioteca_de_componentes |      | 10.3.3559.6081  (Windows) | -O3
+Ram      | ram          | biblioteca_de_componentes |      | 10.3.3559.6081  (Windows) | -O3
+ROM      | rom          | biblioteca_de_componentes |      | 10.3.3559.6081  (Windows) | -O3
+-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------
+VHDL Package            | Library                   | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------------------------
+standard                | std                       |      |                           | <unavailable>
+TEXTIO                  | std                       |      | 10.3.3559.6081  (Windows) |  -2008
+std_logic_1164          | ieee                      |      | 10.3.3559.6081  (Windows) |  -2008
+MATH_REAL               | ieee                      |      | 10.3.3559.6081  (Windows) | <unavailable>
+std_logic_arith         | ieee                      |      | 10.3.3559.6081  (Windows) | <unavailable>
+STD_LOGIC_UNSIGNED      | ieee                      |      | 10.3.3559.6081  (Windows) | <unavailable>
+-------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+Library                   | Comment
+---------------------------------------------------------------------------------------------------------------
+biblioteca_de_componentes | Componentes PCS2307, PCS2022
+ieee                      | Standard IEEE packages library
+std                       | Standard VHDL library
+---------------------------------------------------------------------------------------------------------------

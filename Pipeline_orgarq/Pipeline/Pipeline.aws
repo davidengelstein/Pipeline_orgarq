@@ -1,0 +1,8 @@
+[Version]
+Version=10.5
+[Designs]
+Pipeline=Pipeline.adf
+[Settings]
+Active=Pipeline
+[Expand]
+pipeline=1
