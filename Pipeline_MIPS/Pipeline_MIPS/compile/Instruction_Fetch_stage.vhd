@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : C:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd
--- Generated   : Sun Jun 30 15:49:36 2019
--- From        : C:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde
+-- File        : c:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd
+-- Generated   : Sun Jun 30 16:52:14 2019
+-- From        : c:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ library BIBLIOTECA_DE_COMPONENTES;
 
 entity Instruction_Fetch_stage is
   port(
-       Input_value4 : in STD_LOGIC := 4
+       B : in STD_LOGIC_VECTOR(NumeroBits - 1 downto 0)
   );
 end Instruction_Fetch_stage;
 
@@ -105,11 +105,11 @@ constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
 
 ---- Signal declarations used on the diagram ----
 
-signal BUS2983838 : STD_LOGIC_VECTOR(NumeroBits downto 0);
-signal BUS29869 : STD_LOGIC_VECTOR(NumeroBits downto 0);
-signal C : STD_LOGIC_VECTOR(63 downto 0);
-signal INST : STD_LOGIC_VECTOR(31 downto 0);
-signal PC : STD_LOGIC_VECTOR(31 downto 0);
+signal bus1 : STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
+signal bus2222 : STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
+signal bus660 : STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
+signal dados : STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
+signal INST : STD_LOGIC_VECTOR(NumeroBits-1 downto 0);
 
 ---- Declaration for Dangling input ----
 signal Dangling_Input_Signal : STD_LOGIC;
@@ -129,47 +129,57 @@ U1 : Reg_ClkEnable
   port map(
        C => Dangling_Input_Signal,
        CE => Dangling_Input_Signal,
-       D => BUS2983838(NumeroBits downto 0),
-       Q => BUS29869(NumeroBits downto 0),
+       D => bus660(NumeroBits - 1 downto 0),
+       Q => bus2222(NumeroBits - 1 downto 0),
        R => Dangling_Input_Signal,
        S => Dangling_Input_Signal
   );
 
-U3 : Mux2x1
-  port map(
-       I0 => PC(31 downto 0),
-       O => BUS2983838(NumeroBits downto 0),
-       Sel => Dangling_Input_Signal
-  );
-
-U4 : somador
-  port map(
-       A => BUS29869(31 downto 0),
-       B => Input_value4,
-       C => PC(31 downto 0),
-       S => Dangling_Input_Signal,
-       Vum => Dangling_Input_Signal
-  );
-
-U5 : ram
-  port map(
-       Clock => Dangling_Input_Signal,
-       dado => INST(31 downto 0),
-       enable => Dangling_Input_Signal,
-       ender => BUS29869(NumeroBits downto 0),
-       rw => Dangling_Input_Signal
-  );
-
-U6 : Reg_ClkEnable
+U2 : Reg_ClkEnable
   generic map(
        NumeroBits => 64
   )
   port map(
        C => Dangling_Input_Signal,
        CE => Dangling_Input_Signal,
-       D => C(63 downto 0),
+       D => dados(NumeroBits - 1 downto 0),
        R => Dangling_Input_Signal,
        S => Dangling_Input_Signal
+  );
+
+U3 : Mux2x1
+  generic map(
+       NB => 35
+  )
+  port map(
+       I0 => bus1(NumeroBits - 1 downto 0),
+       O => bus660(NumeroBits - 1 downto 0),
+       Sel => Dangling_Input_Signal
+  );
+
+U4 : somador
+  generic map(
+       NumeroBits => 32
+  )
+  port map(
+       A => bus2222(NumeroBits - 1 downto 0),
+       B => B(NumeroBits - 1 downto 0),
+       C => bus1(NumeroBits - 1 downto 0),
+       S => Dangling_Input_Signal,
+       Vum => Dangling_Input_Signal
+  );
+
+U5 : ram
+  generic map(
+       BP => 32,
+       BE => 32
+  )
+  port map(
+       Clock => Dangling_Input_Signal,
+       dado => INST(NumeroBits-1 downto 0),
+       enable => Dangling_Input_Signal,
+       ender => bus2222(NumeroBits - 1 downto 0),
+       rw => Dangling_Input_Signal
   );
 
 

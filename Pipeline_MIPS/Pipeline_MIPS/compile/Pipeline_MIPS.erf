@@ -13,7 +13,9 @@ MESSAGE "Compile Architecture "Instruction_Fetch_stage" of Entity "Instruction_F
 MESSAGE "File: .\..\compile\Instruction_Fetch_stage.vhd" 
 MESSAGE "Compile Entity "Instruction_Fetch_stage"" 
 MESSAGE "Compile Architecture "Instruction_Fetch_stage" of Entity "Instruction_Fetch_stage"" 
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_ULOGIC'." ".\..\compile\Instruction_Fetch_stage.vhd" 32 39
+ERROR COMP96_0078: "Unknown identifier "NumeroBits"." ".\..\compile\Instruction_Fetch_stage.vhd" 32 32
+ERROR COMP96_0133: "Cannot find object declaration." ".\..\compile\Instruction_Fetch_stage.vhd" 32 32
+ERROR COMP96_0094: "Locally static expression is required in the range definition." ".\..\compile\Instruction_Fetch_stage.vhd" 32 32
 ERROR VLM_0029: "Entity "Instruction_Fetch_stage" not found." ".\..\compile\Instruction_Fetch_stage.vhd" 36 1
 ERROR COMP96_0056: "Cannot find referenced entity declaration "Instruction_Fetch_stage"." ".\..\compile\Instruction_Fetch_stage.vhd" 36 1
-FAILURE "Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]" 
+FAILURE "Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]" 
