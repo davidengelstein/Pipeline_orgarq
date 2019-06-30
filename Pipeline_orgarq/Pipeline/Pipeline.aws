@@ -6,3 +6,9 @@ Pipeline=Pipeline.adf
 Active=Pipeline
 [Expand]
 pipeline=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
