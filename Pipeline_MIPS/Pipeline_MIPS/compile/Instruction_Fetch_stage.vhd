@@ -2,14 +2,14 @@
 --
 -- Title       : No Title
 -- Design      : Pipeline_MIPS
--- Author      : Davidengelstein
--- Company     : Davidengelstein
+-- Author      : Igor Ortega
+-- Company     : POLI USP
 --
 -------------------------------------------------------------------------------
 --
--- File        : c:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd
--- Generated   : Sun Jun 30 16:52:14 2019
--- From        : c:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde
+-- File        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd
+-- Generated   : Sun Jun 30 19:16:38 2019
+-- From        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -24,16 +24,16 @@ use IEEE.std_logic_arith.all;
 use IEEE.std_logic_signed.all;
 use IEEE.std_logic_unsigned.all;
 
--- other libraries declarations
-library BIBLIOTECA_DE_COMPONENTES;
-
-entity Instruction_Fetch_stage is
+entity Instruction_Fetch_sstage is
   port(
-       B : in STD_LOGIC_VECTOR(NumeroBits - 1 downto 0)
+       Clock : in STD_LOGIC;
+       PCSrc : in STD_LOGIC;
+       OUT_MEM : in STD_LOGIC_VECTOR(31 downto 0);
+       OUT_IF : out STD_LOGIC_VECTOR(63 downto 0)
   );
-end Instruction_Fetch_stage;
+end Instruction_Fetch_sstage;
 
-architecture Instruction_Fetch_stage of Instruction_Fetch_stage is
+architecture Instruction_Fetch_sstage of Instruction_Fetch_sstage is
 
 ---- Component declarations -----
 
@@ -105,11 +105,12 @@ constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
 
 ---- Signal declarations used on the diagram ----
 
-signal bus1 : STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
-signal bus2222 : STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
-signal bus660 : STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
-signal dados : STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
-signal INST : STD_LOGIC_VECTOR(NumeroBits-1 downto 0);
+signal IF_ID_In : STD_LOGIC_VECTOR(63 downto 0);
+signal INST : STD_LOGIC_VECTOR(31 downto 0);
+signal PC : STD_LOGIC_VECTOR(31 downto 0);
+signal PC_in : STD_LOGIC_VECTOR(31 downto 0);
+signal PC_mais_quatro : STD_LOGIC_VECTOR(31 downto 0);
+signal value_quatro : STD_LOGIC_VECTOR(31 downto 0);
 
 ---- Declaration for Dangling input ----
 signal Dangling_Input_Signal : STD_LOGIC;
@@ -117,69 +118,68 @@ signal Dangling_Input_Signal : STD_LOGIC;
 begin
 
 ---- User Signal Assignments ----
-C(31 downto 0)<=PC(31 downto 0);
-C(63 downto 32)<=INST(31 downto 0); 
+IF_ID_In(31 downto 0)<=PC_mais_quatro(31 downto 0);
+IF_ID_In(63 downto 32)<=INST(31 downto 0); 
+value_quatro(31 downto 0)<="00000000000000000000000000000100";
 
 ----  Component instantiations  ----
 
-U1 : Reg_ClkEnable
+U10 : ram
+  port map(
+       Clock => Clock,
+       dado => INST(31 downto 0),
+       enable => Dangling_Input_Signal,
+       ender => PC(31 downto 0),
+       rw => Dangling_Input_Signal
+  );
+
+U6 : Reg_ClkEnable
   generic map(
        NumeroBits => 32
   )
   port map(
-       C => Dangling_Input_Signal,
+       C => Clock,
        CE => Dangling_Input_Signal,
-       D => bus660(NumeroBits - 1 downto 0),
-       Q => bus2222(NumeroBits - 1 downto 0),
+       D => PC_in(31 downto 0),
+       Q => PC(31 downto 0),
        R => Dangling_Input_Signal,
        S => Dangling_Input_Signal
   );
 
-U2 : Reg_ClkEnable
-  generic map(
-       NumeroBits => 64
-  )
-  port map(
-       C => Dangling_Input_Signal,
-       CE => Dangling_Input_Signal,
-       D => dados(NumeroBits - 1 downto 0),
-       R => Dangling_Input_Signal,
-       S => Dangling_Input_Signal
-  );
-
-U3 : Mux2x1
+U7 : Mux2x1
   generic map(
        NB => 35
   )
   port map(
-       I0 => bus1(NumeroBits - 1 downto 0),
-       O => bus660(NumeroBits - 1 downto 0),
-       Sel => Dangling_Input_Signal
+       I0 => PC_mais_quatro(31 downto 0),
+       I1 => OUT_MEM(31 downto 0),
+       O => PC_in(31 downto 0),
+       Sel => PCSrc
   );
 
-U4 : somador
+U8 : somador
   generic map(
        NumeroBits => 32
   )
   port map(
-       A => bus2222(NumeroBits - 1 downto 0),
-       B => B(NumeroBits - 1 downto 0),
-       C => bus1(NumeroBits - 1 downto 0),
+       A => PC(31 downto 0),
+       B => value_quatro(31 downto 0),
+       C => PC_mais_quatro(31 downto 0),
        S => Dangling_Input_Signal,
        Vum => Dangling_Input_Signal
   );
 
-U5 : ram
+U9 : Reg_ClkEnable
   generic map(
-       BP => 32,
-       BE => 32
+       NumeroBits => 64
   )
   port map(
-       Clock => Dangling_Input_Signal,
-       dado => INST(NumeroBits-1 downto 0),
-       enable => Dangling_Input_Signal,
-       ender => bus2222(NumeroBits - 1 downto 0),
-       rw => Dangling_Input_Signal
+       C => Clock,
+       CE => Dangling_Input_Signal,
+       D => IF_ID_In(63 downto 0),
+       Q => OUT_IF(63 downto 0),
+       R => Dangling_Input_Signal,
+       S => Dangling_Input_Signal
   );
 
 
@@ -187,4 +187,4 @@ U5 : ram
 
 Dangling_Input_Signal <= DANGLING_INPUT_CONSTANT;
 
-end Instruction_Fetch_stage;
+end Instruction_Fetch_sstage;

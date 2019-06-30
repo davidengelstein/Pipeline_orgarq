@@ -1,1 +1,2 @@
 .\src\Instruction_Fetch_stage.bde
+.\src\Instruction_Decode_Stage.bde

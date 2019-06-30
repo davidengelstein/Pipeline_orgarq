@@ -26,6 +26,7 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+fileopenfolder=C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src
 
 [LocalVerilogSets]
 EnableSLP=1
@@ -50,10 +51,15 @@ Selected=
 
 [Files]
 /Instruction_Fetch_stage.bde=-1
+/Instruction_Decode_Stage.bde=-1
 
 [Files.Data]
 .\src\Instruction_Fetch_stage.bde=Block Diagram
+.\src\Instruction_Decode_Stage.bde=Block Diagram
 .\compile\Instruction_Fetch_stage.vhd=VHDL Source Code
+.\compile\Instruction_Decode_Stage.vhd=VHDL Source Code
 
 [file_out:/Instruction_Fetch_stage.bde]
 /..\compile\Instruction_Fetch_stage.vhd=-1
+[file_out:/Instruction_Decode_Stage.bde]
+/..\compile\Instruction_Decode_Stage.vhd=-1

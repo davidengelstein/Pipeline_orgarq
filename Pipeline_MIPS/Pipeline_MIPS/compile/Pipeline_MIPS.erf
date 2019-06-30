@@ -1,21 +1,19 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
 MESSAGE "File: .\..\compile\Instruction_Fetch_stage.vhd" 
-MESSAGE "Compile Entity "Instruction_Fetch_stage"" 
-MESSAGE "Compile Architecture "Instruction_Fetch_stage" of Entity "Instruction_Fetch_stage"" 
-MESSAGE "Incorrect order of units detected." 
-MESSAGE "Automatic reorder and incremental recompilation of required units in progress." 
-MESSAGE "File: .\..\compile\Instruction_Fetch_stage.vhd" 
-MESSAGE "Compile Entity "Instruction_Fetch_stage"" 
-MESSAGE "Compile Architecture "Instruction_Fetch_stage" of Entity "Instruction_Fetch_stage"" 
-MESSAGE "File: .\..\compile\Instruction_Fetch_stage.vhd" 
-MESSAGE "Compile Entity "Instruction_Fetch_stage"" 
-MESSAGE "Compile Architecture "Instruction_Fetch_stage" of Entity "Instruction_Fetch_stage"" 
-MESSAGE "File: .\..\compile\Instruction_Fetch_stage.vhd" 
-MESSAGE "Compile Entity "Instruction_Fetch_stage"" 
-MESSAGE "Compile Architecture "Instruction_Fetch_stage" of Entity "Instruction_Fetch_stage"" 
-ERROR COMP96_0078: "Unknown identifier "NumeroBits"." ".\..\compile\Instruction_Fetch_stage.vhd" 32 32
-ERROR COMP96_0133: "Cannot find object declaration." ".\..\compile\Instruction_Fetch_stage.vhd" 32 32
-ERROR COMP96_0094: "Locally static expression is required in the range definition." ".\..\compile\Instruction_Fetch_stage.vhd" 32 32
-ERROR VLM_0029: "Entity "Instruction_Fetch_stage" not found." ".\..\compile\Instruction_Fetch_stage.vhd" 36 1
-ERROR COMP96_0056: "Cannot find referenced entity declaration "Instruction_Fetch_stage"." ".\..\compile\Instruction_Fetch_stage.vhd" 36 1
-FAILURE "Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]" 
+MESSAGE "Compile Entity "Instruction_Fetch_sstage"" 
+MESSAGE "Compile Architecture "Instruction_Fetch_sstage" of Entity "Instruction_Fetch_sstage"" 
+MESSAGE "File: .\..\compile\Instruction_Decode_Stage.vhd" 
+MESSAGE "Compile Entity "Instruction_Decode_Stage"" 
+MESSAGE "Compile Architecture "Instruction_Decode_Stage" of Entity "Instruction_Decode_Stage"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity => Instruction_Fetch_sstage" 
+MESSAGE "Entity => Instruction_Decode_Stage" 
+WARNING ELAB1_0026: "There is no default binding for component "ram". (No entity named "ram" was found)." ".\..\compile\Instruction_Fetch_stage.vhd" 127 0
+WARNING ELAB1_0026: "There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found)." ".\..\compile\Instruction_Fetch_stage.vhd" 136 0
+WARNING ELAB1_0026: "There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found)." ".\..\compile\Instruction_Fetch_stage.vhd" 149 0
+WARNING ELAB1_0026: "There is no default binding for component "somador". (No entity named "somador" was found)." ".\..\compile\Instruction_Fetch_stage.vhd" 160 0
+WARNING ELAB1_0026: "There is no default binding for component "dualregfile". (No entity named "dualregfile" was found)." ".\..\compile\Instruction_Decode_Stage.vhd" 144 0
+WARNING ELAB1_0026: "There is no default binding for component "xsign". (No entity named "xsign" was found)." ".\..\compile\Instruction_Decode_Stage.vhd" 159 0
+WARNING ELAB1_0026: "There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found)." ".\..\compile\Instruction_Decode_Stage.vhd" 169 0
+WARNING ELAB1_0026: "There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found)." ".\..\compile\Instruction_Decode_Stage.vhd" 182 0
+SUCCESS "Compile success 0 Errors 8 Warnings  Analysis time :  63.0 [ms]" 
