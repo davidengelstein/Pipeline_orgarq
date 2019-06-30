@@ -1,0 +1,21 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: .\..\compile\Instruction_Fetch_stage.vhd" 
+MESSAGE "Compile Entity "Instruction_Fetch_stage"" 
+MESSAGE "Compile Architecture "Instruction_Fetch_stage" of Entity "Instruction_Fetch_stage"" 
+MESSAGE "Incorrect order of units detected." 
+MESSAGE "Automatic reorder and incremental recompilation of required units in progress." 
+MESSAGE "File: .\..\compile\Instruction_Fetch_stage.vhd" 
+MESSAGE "Compile Entity "Instruction_Fetch_stage"" 
+MESSAGE "Compile Architecture "Instruction_Fetch_stage" of Entity "Instruction_Fetch_stage"" 
+MESSAGE "File: .\..\compile\Instruction_Fetch_stage.vhd" 
+MESSAGE "Compile Entity "Instruction_Fetch_stage"" 
+MESSAGE "Compile Architecture "Instruction_Fetch_stage" of Entity "Instruction_Fetch_stage"" 
+MESSAGE "File: .\..\compile\Instruction_Fetch_stage.vhd" 
+MESSAGE "Compile Entity "Instruction_Fetch_stage"" 
+MESSAGE "Compile Architecture "Instruction_Fetch_stage" of Entity "Instruction_Fetch_stage"" 
+ERROR COMP96_0078: "Unknown identifier "NumeroBits"." ".\..\compile\Instruction_Fetch_stage.vhd" 32 32
+ERROR COMP96_0133: "Cannot find object declaration." ".\..\compile\Instruction_Fetch_stage.vhd" 32 32
+ERROR COMP96_0094: "Locally static expression is required in the range definition." ".\..\compile\Instruction_Fetch_stage.vhd" 32 32
+ERROR VLM_0029: "Entity "Instruction_Fetch_stage" not found." ".\..\compile\Instruction_Fetch_stage.vhd" 36 1
+ERROR COMP96_0056: "Cannot find referenced entity declaration "Instruction_Fetch_stage"." ".\..\compile\Instruction_Fetch_stage.vhd" 36 1
+FAILURE "Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]" 

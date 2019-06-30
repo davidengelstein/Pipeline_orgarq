@@ -1,0 +1,31 @@
+[CACHEDOC|Aldec.Project.Generic.7|.\Pipeline_MIPS\Pipeline_MIPS.adf|]
+Path=
+[COMPILESTATUS|.\src\Instruction_Fetch_stage.bde]
+FileTimeLow=30748534
+Status=Error
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|Registrador|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentZoomFactor=1.000000
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////wAAAAB6AAAAAAUAAHwCAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="
+[CACHEDOC|Aldec.BDE.7|.\..\biblioteca_de_componentesv4.5\src\Reg_ClkEnable.bde|]
+SymbolsToolbox=1
+ZOOMOFSETS_PAGES=1,1,1,2,50,120,
+[CACHEDOC|Aldec.BDE.7|.\..\biblioteca_de_componentesv4.5\src\Ram.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,50,50,
+[COMPILESTATUS|.\compile\Instruction_Fetch_stage.vhd]
+FileTimeLow=30748534
+Status=Error
+[CACHEDOC|Aldec.BDE.7|.\..\biblioteca_de_componentesv4.5\src\somador.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,50,50,
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+biblioteca_de_componentes=0
+Built-in symbols=0
+Pipeline_MIPS=0
+[Gui config]
+RunFor=100 ns
