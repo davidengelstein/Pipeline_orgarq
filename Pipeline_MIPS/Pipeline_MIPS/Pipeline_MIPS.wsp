@@ -1,0 +1,11 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Built-in symbols=0
+Pipeline_MIPS=1
+biblioteca_de_componentes=0
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\Pipeline_MIPS\Pipeline_MIPS.adf|]
+Path=
+

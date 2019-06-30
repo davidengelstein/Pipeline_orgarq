@@ -1,0 +1,10 @@
+timestamp=1561920075185
+
+[~A]
+ModifyID=5
+
+[instruction_fetch_stage]
+A/instruction_fetch_stage=A/Instruction_Fetch_stage 24|.\..\src\Instruction_Fetch_stage.bde|10000|
+
+[~U]
+instruction_fetch_stage=Instruction_Fetch_stage 11||

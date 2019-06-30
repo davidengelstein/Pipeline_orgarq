@@ -1,0 +1,12 @@
+[Version]
+Version=10.5
+[Designs]
+pipeline_mips=.\Pipeline_MIPS\Pipeline_MIPS.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+pipeline_mips=1
