@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd
--- Generated   : Sun Jun 30 15:41:15 2019
+-- Generated   : Sun Jun 30 15:49:36 2019
 -- From        : C:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -105,7 +105,7 @@ constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
 
 ---- Signal declarations used on the diagram ----
 
-signal BUS29838 : STD_LOGIC_VECTOR(NumeroBits downto 0);
+signal BUS2983838 : STD_LOGIC_VECTOR(NumeroBits downto 0);
 signal BUS29869 : STD_LOGIC_VECTOR(NumeroBits downto 0);
 signal C : STD_LOGIC_VECTOR(63 downto 0);
 signal INST : STD_LOGIC_VECTOR(31 downto 0);
@@ -129,7 +129,7 @@ U1 : Reg_ClkEnable
   port map(
        C => Dangling_Input_Signal,
        CE => Dangling_Input_Signal,
-       D => BUS29838(NumeroBits downto 0),
+       D => BUS2983838(NumeroBits downto 0),
        Q => BUS29869(NumeroBits downto 0),
        R => Dangling_Input_Signal,
        S => Dangling_Input_Signal
@@ -138,7 +138,7 @@ U1 : Reg_ClkEnable
 U3 : Mux2x1
   port map(
        I0 => PC(31 downto 0),
-       O => BUS29838(NumeroBits downto 0),
+       O => BUS2983838(NumeroBits downto 0),
        Sel => Dangling_Input_Signal
   );
 
@@ -154,9 +154,9 @@ U4 : somador
 U5 : ram
   port map(
        Clock => Dangling_Input_Signal,
+       dado => INST(31 downto 0),
        enable => Dangling_Input_Signal,
        ender => BUS29869(NumeroBits downto 0),
-       pronto => INST(31),
        rw => Dangling_Input_Signal
   );
 
