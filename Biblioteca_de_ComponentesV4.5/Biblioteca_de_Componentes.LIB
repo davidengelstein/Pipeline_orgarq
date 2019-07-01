@@ -1,8 +1,8 @@
-timestamp=1530711847450
+timestamp=1561943560899
 
 [~A]
 Comment=Componentes PCS2307, PCS2022
-ModifyID=12699
+ModifyID=12712
 Version=74
 
 [absminmaxsomsub]
@@ -199,6 +199,35 @@ R=./compile/HA.vhd|25
 S/ha=40|0|2*38049
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|f25b8e372b9b1547b9445e08b9cb2ca028861dba0ffa7ef841891d4f941963e9
 Version/ha=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|f25b8e372b9b1547b9445e08b9cb2ca047c71d59f2c748b0ad70c73037819435
+
+[instruction_decode_stage]
+A/instruction_decode_stage=A/Instruction_Decode_Stage 24|.\..\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde|10000|1*244464
+BinI32/instruction_decode_stage=3*38364
+I=0*142102
+I/instruction_decode_stage=I/Instruction_Decode_Stage 0*145759
+M=11|0|vde|1561942567775|./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd|0*141321*0xd198ff3530acaf64619f3fc4e7ad57ff10f578c0|0*141955*0x23b75c12e3e89f2ef000564498faa8c2
+M/instruction_decode_stage=M/Instruction_Decode_Stage 21|0|vde|1561942567777|./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd|0*142425*0xaf00d1b2102d567c1d6f32eea1e786efb5f00177|0*145584*0x20116f55b147878295aeff36dce7fc50
+R=./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd|27
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce866c0066a9a678c8888d1e8158713cda5235ab5332f748de5a8861769e92b3aad2835acd9d3ea156a3a48467f3a5dd063ed81fb4abc7c20d
+Version/instruction_decode_stage=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce866c0066a9a678c8888d1e8158713cda5235ab5332f748de5a8861769e92b3aad2835acd9d3ea156a3a48467f3a5dd063ed81fb4abc7c20d
+
+[instruction_execute_stage]
+A/instruction_execute_stage=A/Instruction_Execute_Stage 24|.\..\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde|10000|
+I=0*147192
+M=11|0|vde|1561942725512|./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Execute_Stage.vhd|0*146510*0x960cb13e51a78f9577fbc2d4f65854a8122a846b|0*147043*0x23b75c12e3e89f2ef000564498faa8c2
+R=./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Execute_Stage.vhd|27
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce866c0066a9a678c85d503691d70e01826372d215e286c2c32099edcdc274741a09192e328b8f2329fefeacb9d368ffb6e269f470717b0056
+
+[instruction_fetch_sstage]
+A/instruction_fetch_sstage=A/Instruction_Fetch_sstage 24|.\..\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde|10000|1*237182
+BinI32/instruction_fetch_sstage=3*37853
+I=0*137276
+I/instruction_fetch_sstage=I/Instruction_Fetch_sstage 0*140557
+M=11|0|vde|1561942567758|./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd|0*136648*0x4a289183a9943f1699f901dc2327e59888b5e710|0*137130*0x23b75c12e3e89f2ef000564498faa8c2
+M/instruction_fetch_sstage=M/Instruction_Fetch_sstage 21|0|vde|1561942567760|./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd|0*137599*0x0c7ff36035c0330524cd3b6d470d1391210108bf|0*140383*0x20116f55b147878295aeff36dce7fc50
+R=./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd|27
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce866c0066a9a678c8e2b999f29fb130907300cab43789ad0b97d3a6214eff75062f54647285e0087439f166dd8c512b8158e75872817e58da
+Version/instruction_fetch_sstage=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce866c0066a9a678c8e2b999f29fb130907300cab43789ad0b97d3a6214eff75062f54647285e0087439f166dd8c512b8158e75872817e58da
 
 [log_sinc]
 A/log_sinc=A/Log_Sinc 24|.\src\Log_Sinc.bde|10000|1*176703
@@ -574,10 +603,10 @@ Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|56d06ac7f7f65368f
 Version/xzero=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|56d06ac7f7f65368f4591aa3c0074e82f7aec82cbc58362066c98c3833a72599
 
 [~MFT]
-0=188|0Biblioteca_de_Componentes.mgf|136100|48246
-1=94|1Biblioteca_de_Componentes.mgf|235105|159030
+0=4|0Biblioteca_de_Componentes.mgf|147192|48246
+1=0|1Biblioteca_de_Componentes.mgf|244464|159030
 2=0|2Biblioteca_de_Componentes.mgf|120133|4423
-3=94|3Biblioteca_de_Componentes.mgf|36676|0
+3=0|3Biblioteca_de_Componentes.mgf|38364|0
 
 [~U]
 absminmaxsomsub=11|0*52176||0x3
@@ -597,6 +626,9 @@ fuse=Fuse 11|0*61591|
 fuse_and=Fuse_and 11|0*62166||0x3
 fuse_ou=11|0*62344||0x3
 ha=HA 11|0*62932||0x3
+instruction_decode_stage=Instruction_Decode_Stage 11|0*141038|
+instruction_execute_stage=Instruction_Execute_Stage 11|0*146245|
+instruction_fetch_sstage=Instruction_Fetch_sstage 11|0*136398|
 log_sinc=Log_Sinc 11|0*63531||0x3
 maisum=11|0*64192||0x3
 maximo=11|0*64989||0x3

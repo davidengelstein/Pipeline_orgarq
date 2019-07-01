@@ -1,8 +1,8 @@
 [CACHEDOC|Aldec.Project.Generic.7|.\Pipeline_MIPS\Pipeline_MIPS.adf|]
 Path=
 [COMPILESTATUS|.\src\Instruction_Fetch_stage.bde]
-FileTimeLow=30748534
-Status=Error
+FileTimeLow=30748583
+Status=Compiled
 [CACHEDOC|Aldec.Hde.HdePlugIn.7|Registrador|]
 CurrentLine=0
 CurrentColumn=0
@@ -10,7 +10,7 @@ Bookmarks=-1
 BookmarksLength=3
 CurrentZoomFactor=1.000000
 Frame=0
-WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////wAAAAB6AAAAAAUAAHwCAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="
+WindowWorkspaceInfo=LAAAAAAAAAABAAAA/////////////////////wAAAAB6AAAAAAUAAHwCAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
 [CACHEDOC|Aldec.BDE.7|.\..\biblioteca_de_componentesv4.5\src\Reg_ClkEnable.bde|]
 SymbolsToolbox=1
 ZOOMOFSETS_PAGES=1,1,1,2,50,120,
@@ -18,8 +18,8 @@ ZOOMOFSETS_PAGES=1,1,1,2,50,120,
 SymbolsToolbox=0
 ZOOMOFSETS_PAGES=1,1,1,2,50,50,
 [COMPILESTATUS|.\compile\Instruction_Fetch_stage.vhd]
-FileTimeLow=30748534
-Status=Error
+FileTimeLow=30748583
+Status=Compiled
 [CACHEDOC|Aldec.BDE.7|.\..\biblioteca_de_componentesv4.5\src\somador.bde|]
 SymbolsToolbox=0
 ZOOMOFSETS_PAGES=1,1,1,2,50,50,
@@ -27,5 +27,23 @@ ZOOMOFSETS_PAGES=1,1,1,2,50,50,
 biblioteca_de_componentes=0
 Built-in symbols=0
 Pipeline_MIPS=0
+[COMPILESTATUS|.\src\Instruction_Decode_Stage.bde]
+FileTimeLow=30748576
+Status=Compiled
+[COMPILESTATUS|.\compile\Instruction_Decode_Stage.vhd]
+FileTimeLow=30748583
+Status=Compiled
+[COMPILESTATUS|.\src\Execution_Stage.bde]
+FileTimeLow=30748583
+Status=Modified
+[COMPILESTATUS|.\src\Instruction_Execute_Stage.bde]
+FileTimeLow=30748586
+Status=Modified
+[CACHEDOC|Aldec.BDE.7|.\Pipeline_MIPS\src\Execution_Stage.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,50,223,
+[COMPILESTATUS|.\compile\Instruction_Execute_Stage.vhd]
+FileTimeLow=30748586
+Status=Error
 [Gui config]
 RunFor=100 ns

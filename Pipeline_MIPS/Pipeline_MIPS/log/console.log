@@ -1,0 +1,177 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+acom -O3 -e 100 -work Pipeline_MIPS -2002  $dsn/src/Instruction_Fetch_stage.bde $dsn/src/Instruction_Decode_Stage.bde
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde'.
+# DRC: Warning: Instruction_Fetch_stage.bde - 0 error(s), 21 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde'.
+# DRC: Warning: Instruction_Decode_Stage.bde - 0 error(s), 17 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Decode_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Fetch_stage.vhd
+# Compile Entity "Instruction_Fetch_sstage"
+# Compile Architecture "Instruction_Fetch_sstage" of Entity "Instruction_Fetch_sstage"
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (127, 0): There is no default binding for component "ram". (No entity named "ram" was found).
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (136, 0): There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found).
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (149, 0): There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found).
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (160, 0): There is no default binding for component "somador". (No entity named "somador" was found).
+# File: .\..\compile\Instruction_Decode_Stage.vhd
+# Compile Entity "Instruction_Decode_Stage"
+# Compile Architecture "Instruction_Decode_Stage" of Entity "Instruction_Decode_Stage"
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (144, 0): There is no default binding for component "dualregfile". (No entity named "dualregfile" was found).
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (159, 0): There is no default binding for component "xsign". (No entity named "xsign" was found).
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (169, 0): There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found).
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (182, 0): There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found).
+# Compile success 0 Errors 8 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Fetch_stage.bde $dsn/src/Instruction_Decode_Stage.bde
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde'.
+# DRC: Warning: Instruction_Fetch_stage.bde - 0 error(s), 17 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde'.
+# DRC: Warning: Instruction_Decode_Stage.bde - 0 error(s), 13 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Decode_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Fetch_stage.vhd
+# Compile Entity "Instruction_Fetch_sstage"
+# Compile Architecture "Instruction_Fetch_sstage" of Entity "Instruction_Fetch_sstage"
+# File: .\..\compile\Instruction_Decode_Stage.vhd
+# Compile Entity "Instruction_Decode_Stage"
+# Compile Architecture "Instruction_Decode_Stage" of Entity "Instruction_Decode_Stage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Execute_Stage.bde
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde'.
+# DRC: Warning: Instruction_Execute_Stage.bde - 0 error(s), 23 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Unknown identifier "Rt".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Cannot find object declaration.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Unknown identifier "Rd".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Cannot find object declaration.
+# Error: COMP96_0288: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (127, 1): Target of signal assignment is not a signal.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (131, 1): Unknown identifier "end_jump".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (131, 1): Cannot find object declaration.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (134, 27): Unknown identifier "ALU_Out".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (134, 27): Cannot find object declaration.
+# Error: COMP96_0077: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (134, 27): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0259: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (136, 11): Index value in the reference to the array object is out of the array type range.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Execute_Stage.bde
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde'.
+# DRC: Warning: Instruction_Execute_Stage.bde - 0 error(s), 23 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Unknown identifier "Rt".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Cannot find object declaration.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Unknown identifier "Rd".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Cannot find object declaration.
+# Error: COMP96_0288: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (127, 1): Target of signal assignment is not a signal.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (131, 1): Unknown identifier "end_jump".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (131, 1): Cannot find object declaration.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (134, 27): Unknown identifier "ALU_Out".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (134, 27): Cannot find object declaration.
+# Error: COMP96_0077: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (134, 27): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0259: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (136, 11): Index value in the reference to the array object is out of the array type range.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Execute_Stage.bde
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde'.
+# DRC: Warning: Instruction_Execute_Stage.bde - 0 error(s), 23 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Unknown identifier "Rt".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Cannot find object declaration.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Unknown identifier "Rd".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Cannot find object declaration.
+# Error: COMP96_0288: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (127, 1): Target of signal assignment is not a signal.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (131, 1): Unknown identifier "end_jump".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (131, 1): Cannot find object declaration.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (134, 27): Unknown identifier "ALU_Out".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (134, 27): Cannot find object declaration.
+# Error: COMP96_0077: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (134, 27): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 10 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Execute_Stage.bde
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde'.
+# DRC: Warning: Instruction_Execute_Stage.bde - 0 error(s), 23 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Unknown identifier "Rt".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Cannot find object declaration.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Unknown identifier "Rd".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Cannot find object declaration.
+# Error: COMP96_0288: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (127, 1): Target of signal assignment is not a signal.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (131, 1): Unknown identifier "end_jump".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (131, 1): Cannot find object declaration.
+# Error: COMP96_0367: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (134, 27): Improper array length (32). Expected length is 64.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Execute_Stage.bde
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde'.
+# DRC: Warning: Instruction_Execute_Stage.bde - 0 error(s), 23 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Unknown identifier "Rt".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Cannot find object declaration.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Unknown identifier "Rd".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Cannot find object declaration.
+# Error: COMP96_0288: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (127, 1): Target of signal assignment is not a signal.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (131, 1): Unknown identifier "end_jump".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (131, 1): Cannot find object declaration.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Execute_Stage.bde
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde'.
+# DRC: Warning: Instruction_Execute_Stage.bde - 0 error(s), 23 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Unknown identifier "Rt".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (125, 1): Cannot find object declaration.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Unknown identifier "Rd".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (126, 1): Cannot find object declaration.
+# Error: COMP96_0078: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (130, 1): Unknown identifier "end_jump".
+# Error: COMP96_0133: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (130, 1): Cannot find object declaration.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]

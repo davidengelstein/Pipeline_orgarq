@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Decode_Stage.vhd
--- Generated   : Sun Jun 30 19:16:39 2019
+-- Generated   : Sun Jun 30 21:56:07 2019
 -- From        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -136,7 +136,7 @@ ID_EX_In(9 downto 5)<=Rd(4 downto 0);
 ID_EX_In(41 downto 10)<=ext_Immed_off(31 downto 0);
 ID_EX_In(73 downto 42)<=RtData(31 downto 0);
 ID_EX_In(105 downto 74)<=RsData(31 downto 0);
-ID_EX_In(131 downto 106)<=RsData(25 downto 0);
+ID_EX_In(131 downto 106)<=endJump(25 downto 0);
 ID_EX_In(163 downto 132)<=PC_mais_quatro(31 downto 0);
 
 ----  Component instantiations  ----

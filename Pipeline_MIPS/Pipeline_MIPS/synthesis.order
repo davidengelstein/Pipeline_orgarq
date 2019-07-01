@@ -1,2 +1,3 @@
 i<>.\src\Instruction_Fetch_stage.bde
 i<>.\src\Instruction_Decode_Stage.bde
+i<>.\src\Instruction_Execute_Stage.bde

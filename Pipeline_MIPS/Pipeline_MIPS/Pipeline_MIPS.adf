@@ -5,7 +5,7 @@ version=4
 Current Config=compile
 
 [Configurations]
-compile=Pipeline_MIPS
+compile=biblioteca_de_componentes
 
 [Library]
 Pipeline_MIPS=.\Pipeline_MIPS\Pipeline_MIPS.lib
@@ -45,21 +45,26 @@ fd_componentes=.
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=instruction_fetch_sstage|Instruction_Fetch_sstage|0 
 ShowHide=ShowTopLevel
 Selected=
 
 [Files]
 /Instruction_Fetch_stage.bde=-1
 /Instruction_Decode_Stage.bde=-1
+/Instruction_Execute_Stage.bde=-1
 
 [Files.Data]
 .\src\Instruction_Fetch_stage.bde=Block Diagram
 .\src\Instruction_Decode_Stage.bde=Block Diagram
-.\compile\Instruction_Fetch_stage.vhd=VHDL Source Code
-.\compile\Instruction_Decode_Stage.vhd=VHDL Source Code
+.\src\Instruction_Execute_Stage.bde=Block Diagram
 
 [file_out:/Instruction_Fetch_stage.bde]
 /..\compile\Instruction_Fetch_stage.vhd=-1
+
 [file_out:/Instruction_Decode_Stage.bde]
 /..\compile\Instruction_Decode_Stage.vhd=-1
+
+[file_out:/Instruction_Execute_Stage.bde]
+/..\compile\Instruction_Execute_Stage.vhd=-1
+

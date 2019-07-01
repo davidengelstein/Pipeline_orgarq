@@ -1,4 +1,4 @@
-42
+45
 ~E 1 "./../compile/Instruction_Decode_Stage.vhd" 27 Instruction_Decode_Stage
 ~A 1 "./../compile/Instruction_Decode_Stage.vhd" 40 Instruction_Decode_Stage
 ~E 1 "./../compile/Instruction_Fetch_stage.vhd" 27 Instruction_Fetch_sstage
