@@ -2,7 +2,7 @@ SCHM0106
 
 HEADER
 {
- FREEID 414
+ FREEID 431
  VARIABLES
  {
   #ARCHITECTURE="Esquema_Geral"
@@ -1209,7 +1209,7 @@ PAGE ""
     #COMPONENT="Input"
     #CUSTOM_NAME=""
     #LIBRARY="#terminals"
-    #REFERENCE="Input2"
+    #REFERENCE="Clock"
     #SYMBOL="Input"
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
    }
@@ -1219,7 +1219,7 @@ PAGE ""
   TEXT  345, 0, 0
   {
    TEXT "$#REFERENCE"
-   RECT (28,123,109,158)
+   RECT (34,123,109,158)
    ALIGN 6
    MARGINS (1,1)
    PARENT 344
@@ -1378,7 +1378,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  397, 0, 0
+  TEXT  414, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -1389,7 +1389,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  398, 0, 0
+  TEXT  415, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -1400,7 +1400,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  399, 0, 0
+  TEXT  416, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -1410,7 +1410,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  400, 0, 0
+  TEXT  417, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -1422,7 +1422,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  401, 0, 0
+  TEXT  418, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -1435,7 +1435,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  402, 0, 0
+  TEXT  419, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -1445,7 +1445,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  403, 0, 0
+  TEXT  420, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -1457,7 +1457,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  404, 0, 0
+  TEXT  421, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -1467,7 +1467,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  405, 0, 0
+  TEXT  422, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -1478,7 +1478,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  406, 0, 0
+  GROUP  423, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -1490,7 +1490,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  407, 0, 0
+  GROUP  424, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -1502,7 +1502,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  408, 0, 0
+  GROUP  425, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -1514,7 +1514,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  409, 0, 0
+  GROUP  426, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -1526,7 +1526,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  410, 0, 0
+  GROUP  427, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -1538,7 +1538,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  411, 0, 0
+  GROUP  428, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -1549,7 +1549,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  412, 0, 0
+  GROUP  429, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -1560,7 +1560,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  413, 0, 0
+  BMPPICT  430, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)
