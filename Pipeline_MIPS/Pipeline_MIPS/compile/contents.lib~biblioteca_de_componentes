@@ -1,145 +1,133 @@
-12986
+12869
 ~E 1 "./compile/absminmaxsomsub.vhd" 26 absminmaxsomsub
 ~A 1 "./compile/absminmaxsomsub.vhd" 42 absminmaxsomsub
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Acesso_Memoria_Stage.vhd" 27 Acesso_Memoria
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Acesso_Memoria_Stage.vhd" 38 Acesso_Memoria
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle_ALU.vhd" 28 ALU_Control
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle_ALU.vhd" 38 alu_control
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Acesso_Memoria_Stage.vhd" 27 Acesso_Memoria
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Acesso_Memoria_Stage.vhd" 38 Acesso_Memoria
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle_ALU.vhd" 28 ALU_Control
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle_ALU.vhd" 38 ALU_Control
 ~E 1 "./compile/And_NE.vhd" 25 And_NE
-~A 1 "./compile/And_NE.vhd" 35 and_ne
-~E 0 "" 0 ativar_registradores
-~E 0 "" 0 Bancada_de_Teste
-~E 0 "" 0 BancadaDeTeste
+~A 1 "./compile/And_NE.vhd" 35 And_NE
+~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/Bancada_de_Teste.vhd" 24 Bancada_de_Teste
+~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/Bancada_de_Teste.vhd" 36 Bancada_de_Teste
 ~E 1 "./compile/buffertristate.vhd" 25 bufferTristate
-~A 1 "./compile/buffertristate.vhd" 38 buffertristate
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 31 cache_D
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 43 cache_d
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 31 Cache_I
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 40 cache_i
-~E 1 "./compile/contador.vhd" 26 contador
-~A 1 "./compile/contador.vhd" 45 contador
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle.vhd" 28 Controle
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle.vhd" 37 controle
+~A 1 "./compile/buffertristate.vhd" 38 bufferTristate
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 31 cache_D
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 43 cache_D
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 31 Cache_I
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 40 Cache_I
+~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/contador.vhd" 26 contador
+~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/contador.vhd" 45 contador
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle.vhd" 28 Controle
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle.vhd" 37 Controle
 ~E 1 "./compile/CSA.vhd" 25 CSA
-~A 1 "./compile/CSA.vhd" 40 csa
+~A 1 "./compile/CSA.vhd" 40 CSA
 ~E 1 "./compile/Decodificador.vhd" 24 Decodificador
-~A 1 "./compile/Decodificador.vhd" 31 decodificador
+~A 1 "./compile/Decodificador.vhd" 31 Decodificador
 ~E 1 "./compile/deslocad1.vhd" 26 DeslocaD1
-~A 1 "./compile/deslocad1.vhd" 37 deslocad1
+~A 1 "./compile/deslocad1.vhd" 37 DeslocaD1
 ~E 1 "./compile/deslocad3.vhd" 26 DeslocaD3
-~A 1 "./compile/deslocad3.vhd" 37 deslocad3
-~E 1 "./compile/deslocador.vhd" 25 deslocador
-~A 1 "./compile/deslocador.vhd" 42 deslocador
+~A 1 "./compile/deslocad3.vhd" 37 DeslocaD3
+~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/deslocador.vhd" 27 deslocador
+~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/deslocador.vhd" 45 deslocador
 ~E 1 "./compile/deslocador_combinatorio.vhd" 25 deslocador_combinatorio
 ~A 1 "./compile/deslocador_combinatorio.vhd" 38 deslocador_combinatorio
 ~E 1 "./compile/DualRegFile.vhd" 25 DualRegFile
-~A 1 "./compile/DualRegFile.vhd" 43 dualregfile
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Esquema_Geral.vhd" 27 Esquema_Geral
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Fluxo de dados.vhd" 33 esquema_geral
+~A 1 "./compile/DualRegFile.vhd" 43 DualRegFile
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Esquema_Geral.vhd" 27 Esquema_Geral
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Fluxo de dados.vhd" 33 Esquema_Geral
 ~E 1 "./compile/FA.vhd" 28 FA
-~A 1 "./compile/FA.vhd" 38 fa
-~E 0 "" 0 FD_MBcS
-~A 0 "" 0 fd_mbcs
-~E 1 "./compile/FFD.vhd" 25 FFD
-~A 1 "./compile/FFD.vhd" 39 ffd
+~A 1 "./compile/FA.vhd" 38 FA
+~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/FD_MBcS.vhd" 24 FD_MBcS
+~A 0 "" 0 FD_MBcS
+~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/FFD.vhd" 27 FFD
+~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/FFD.vhd" 42 FFD
 ~E 0 "" 0 Fluxo_de_dados
-~A 0 "" 0 fluxo_de_dados
 ~E 0 "" 0 Fub1
+~A 0 "" 0 Bancada_de_Teste
+~E 0 "" 0 Fub2
 ~E 1 "./compile/Fuse_and.vhd" 25 Fuse
-~A 1 "./compile/Fuse_and.vhd" 34 fuse
+~A 1 "./compile/Fuse_and.vhd" 34 Fuse
 ~E 0 "" 0 Fuse_and
 ~A 0 "" 0 fuse_and
 ~E 1 "./compile/fuse_ou.vhd" 25 fuse_ou
 ~A 1 "./compile/fuse_ou.vhd" 33 fuse_ou
 ~E 1 "./compile/HA.vhd" 25 HA
-~A 1 "./compile/HA.vhd" 37 ha
-~E 0 "" 0 IF_ID
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd" 27 Instruction_Decode_Stage
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd" 39 Instruction_Decode_Stage
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Execute_Stage.vhd" 27 Instruction_Execute_Stage
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Execute_Stage.vhd" 35 Instruction_Execute_Stage
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 30 Instruction_Fetch_sstage
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 39 Instruction_Fetch_sstage
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 27 Instruction_Fetch_stage
-~E 1 "c:/My_Designs/test/test/compile/Juntar.vhd" 24 Juntar
-~A 1 "c:/My_Designs/test/test/compile/Juntar.vhd" 32 juntar
+~A 1 "./compile/HA.vhd" 37 HA
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd" 27 Instruction_Decode_Stage
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd" 39 Instruction_Decode_Stage
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Execute_Stage.vhd" 27 Instruction_Execute_Stage
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Execute_Stage.vhd" 35 Instruction_Execute_Stage
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 30 Instruction_Fetch_sstage
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 39 Instruction_Fetch_sstage
 ~E 1 "./compile/Log_Sinc.vhd" 25 Log_Sinc
-~A 1 "./compile/Log_Sinc.vhd" 37 log_sinc
+~A 1 "./compile/Log_Sinc.vhd" 37 Log_Sinc
 ~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/macroEstrutura_MBcS.vhd" 27 macroEstrutura_MBcS
-~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/macroEstrutura_MBcS.vhd" 30 macroestrutura_mbcs
+~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/macroEstrutura_MBcS.vhd" 30 macroEstrutura_MBcS
 ~E 1 "./compile/maisum.vhd" 26 maisum
 ~A 1 "./compile/maisum.vhd" 37 maisum
 ~E 1 "./compile/maximo.vhd" 26 maximo
 ~A 1 "./compile/maximo.vhd" 38 maximo
-~E 1 "c:/My_Designs/MBcS/MBcS/compile/MBcS.vhd" 27 MBcS
-~A 1 "c:/My_Designs/MBcS/MBcS/compile/MBcS.vhd" 30 mbcs
 ~E 1 "./compile/minimo.vhd" 26 minimo
 ~A 1 "./compile/minimo.vhd" 38 minimo
-~E 1 "c:/My_Designs/MBcS/MBcS/compile/MultDeBooth.vhd" 24 MultDeBooth
-~A 0 "" 0 multdebooth
-~E 1 "./compile/multiplexador.vhd" 25 multiplexador
-~A 1 "./compile/multiplexador.vhd" 39 multiplexador
+~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/multiplexador.vhd" 27 multiplexador
+~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/multiplexador.vhd" 41 multiplexador
 ~E 1 "./compile/Mux2x1.vhd" 27 Mux2x1
-~A 1 "./compile/Mux2x1.vhd" 39 mux2x1
+~A 1 "./compile/Mux2x1.vhd" 39 Mux2x1
 ~E 1 "./compile/Mux4x1.vhd" 25 Mux4x1
-~A 1 "./compile/Mux4x1.vhd" 41 mux4x1
+~A 1 "./compile/Mux4x1.vhd" 41 Mux4x1
 ~E 1 "./compile/Mux8x1.vhd" 25 Mux8x1
-~A 1 "./compile/Mux8x1.vhd" 45 mux8x1
+~A 1 "./compile/Mux8x1.vhd" 45 Mux8x1
 ~E 1 "./compile/Mux8x1_1.vhd" 27 Mux8x1_1
-~A 1 "./compile/Mux8x1_1.vhd" 45 mux8x1_1
-~E 0 "" 0 mux_PC
+~A 1 "./compile/Mux8x1_1.vhd" 45 Mux8x1_1
 ~E 1 "./compile/NROM.vhd" 30 NROM
-~A 1 "./compile/NROM.vhd" 43 nrom
+~A 1 "./compile/NROM.vhd" 43 NROM
 ~E 1 "./compile/Ou_NP.vhd" 25 Ou_NP
-~A 1 "./compile/Ou_NP.vhd" 35 ou_np
+~A 1 "./compile/Ou_NP.vhd" 35 Ou_NP
 ~E 0 "" 0 Ou_NS
 ~A 0 "" 0 ou_ns
-~E 0 "" 0 PC
 ~E 1 "./compile/Ram.vhd" 30 Ram
-~A 1 "./compile/Ram.vhd" 50 ram
+~A 1 "./compile/Ram.vhd" 50 Ram
 ~E 1 "./compile/Ram_sem_carga.vhd" 29 RAM_sem_carga
-~A 1 "./compile/Ram_sem_carga.vhd" 49 ram_sem_carga
-~E 1 "c:/My_Designs/Projeto_OrgArq/Pipeline/compile/Reg32bits.vhd" 24 Reg32bits
-~A 0 "" 0 reg32bits
-~E 1 "./compile/Reg_ClkEnable.vhd" 24 Reg_ClkEnable
-~A 1 "./compile/Reg_ClkEnable.vhd" 40 reg_clkenable
+~A 1 "./compile/Ram_sem_carga.vhd" 49 RAM_sem_carga
+~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/Reg_ClkEnable.vhd" 24 Reg_ClkEnable
+~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/Reg_ClkEnable.vhd" 40 Reg_ClkEnable
 ~E 1 "./compile/RegFile.vhd" 25 RegFile
-~A 1 "./compile/RegFile.vhd" 41 regfile
+~A 1 "./compile/RegFile.vhd" 41 RegFile
 ~E 1 "./compile/registrador.vhd" 25 registrador
 ~A 1 "./compile/registrador.vhd" 40 registrador
 ~E 1 "./compile/RingCounter.vhd" 28 RingCounter
-~A 1 "./compile/RingCounter.vhd" 40 ringcounter
+~A 1 "./compile/RingCounter.vhd" 40 RingCounter
 ~E 1 "./compile/ROM.vhd" 30 ROM
-~A 1 "./compile/ROM.vhd" 43 rom
+~A 1 "./compile/ROM.vhd" 43 ROM
 ~E 1 "./compile/ROM_sem_carga.vhd" 31 ROM_sem_carga
-~A 1 "./compile/ROM_sem_carga.vhd" 44 rom_sem_carga
-~E 0 "" 0 selecionar_PC
-~E 1 "./compile/somador.vhd" 26 Somador
+~A 1 "./compile/ROM_sem_carga.vhd" 44 ROM_sem_carga
+~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/somador.vhd" 26 Somador
+~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/somador.vhd" 41 Somador
 ~E 1 "./compile/somasubabs.vhd" 26 somasubabs
 ~A 1 "./compile/somasubabs.vhd" 42 somasubabs
 ~E 1 "./compile/somasubabsmax.vhd" 26 somasubabsmax
 ~A 1 "./compile/somasubabsmax.vhd" 42 somasubabsmax
 ~E 1 "./compile/SomSub.vhd" 27 SomSub
-~A 1 "./compile/SomSub.vhd" 46 somsub
+~A 1 "./compile/SomSub.vhd" 46 SomSub
 ~E 1 "./compile/Stack.vhd" 25 Stack
-~A 1 "./compile/Stack.vhd" 41 stack
-~E 1 "./compile/subtrator.vhd" 26 subtrator
-~A 1 "./compile/subtrator.vhd" 38 subtrator
-~E 1 "c:/My_Designs/test/test/compile/test.vhd" 27 test
+~A 1 "./compile/Stack.vhd" 41 Stack
+~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/subtrator.vhd" 26 subtrator
+~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/subtrator.vhd" 38 subtrator
 ~E 1 "./compile/TesteMem.vhd" 28 TesteMem
-~A 1 "./compile/TesteMem.vhd" 41 testemem
+~A 1 "./compile/TesteMem.vhd" 41 TesteMem
 ~E 1 "./src/fill_memory.vhd" 8 testfill
 ~A 1 "./src/fill_memory.vhd" 13 fillmem
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/top_level.vhd" 27 top_level
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/top_level.vhd" 33 top_level
-~E 0 "" 0 UC_MBcS
-~E 0 "" 0 UC_MultDeBooth
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/top_level.vhd" 27 top_level
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/top_level.vhd" 33 top_level
+~E 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/UC_MBcS.vhd" 24 UC_MBcS
+~A 1 "c:/My_Designs/atividade_multiplicador_binario/atividade_multiplicador_binario/compile/UC_MBcS.vhd" 44 UC_MBcS
 ~E 1 "./compile/ULA.vhd" 26 ULA
-~A 1 "./compile/ULA.vhd" 46 ula
+~A 1 "./compile/ULA.vhd" 46 ULA
+~E 0 "" 0 Unidade_de_Controle
 ~E 1 "./compile/valor_absoluto.vhd" 26 valor_absoluto
 ~A 1 "./compile/valor_absoluto.vhd" 37 valor_absoluto
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Write_Back_Stage.vhd" 27 Write_Back_Stage
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Write_Back_Stage.vhd" 36 Write_Back_Stage
+~E 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Write_Back_Stage.vhd" 27 Write_Back_Stage
+~A 1 "C:/Users/david/OneDrive/Documentos/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Write_Back_Stage.vhd" 36 Write_Back_Stage
 ~E 1 "./compile/xsign.vhd" 25 xsign
 ~A 1 "./compile/xsign.vhd" 36 xsign
 ~E 1 "./compile/xzero.vhd" 25 xzero

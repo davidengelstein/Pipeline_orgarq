@@ -9,8 +9,7 @@ compile=biblioteca_de_componentes
 
 [Library]
 Pipeline_MIPS=.\Pipeline_MIPS\Pipeline_MIPS.lib
-fd_componentes=.\..\..\..\..\..\..\..\..\aldec\active-hdl-student-edition\vlib\biblioteca_de_componentesv4.5\fd_componentes\fd_componentes.lib
-biblioteca_de_componentes=.\..\..\..\..\..\..\..\aldec\active-hdl-student-edition\vlib\biblioteca_de_componentesv4.5\biblioteca_de_componentes.lib
+biblioteca_de_componentes=.\..\..\..\..\..\..\..\..\aldec\active-hdl-student-edition\vlib\biblioteca_de_componentesv4.5\biblioteca_de_componentes.lib
 
 [Settings]
 AccessRead=0
@@ -38,7 +37,6 @@ CompileWithDebug=0
 [$LibMap$]
 Pipeline_MIPS=.
 Active_lib=
-fd_componentes=.
 biblioteca_de_componentes=.
 
 [SpecTracer]
@@ -48,6 +46,13 @@ WindowVisible=0
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
+
+
+
+
+
+
 
 [Files]
 /Instruction_Fetch_stage.bde=-1
@@ -74,30 +79,25 @@ Selected=
 .\src\Controle.vhd=VHDL Source Code
 .\src\cache_I.vhd=VHDL Source Code
 .\src\top_level.bde=Block Diagram
-.\compile\top_level.vhd=VHDL Source Code
-.\compile\Write_Back_Stage.vhd=VHDL Source Code
-.\compile\Acesso_Memoria_Stage.vhd=VHDL Source Code
-.\compile\Instruction_Execute_Stage.vhd=VHDL Source Code
-.\compile\Instruction_Decode_Stage.vhd=VHDL Source Code
 .\compile\Instruction_Fetch_stage.vhd=VHDL Source Code
+.\compile\Instruction_Decode_Stage.vhd=VHDL Source Code
+.\compile\Instruction_Execute_Stage.vhd=VHDL Source Code
+.\compile\Acesso_Memoria_Stage.vhd=VHDL Source Code
+.\compile\Fluxo de dados.vhd=VHDL Source Code
+.\compile\Write_Back_Stage.vhd=VHDL Source Code
+.\compile\top_level.vhd=VHDL Source Code
 
-
-
-
-
-[file_out:/Fluxo de dados.bde]
-/..\compile\Fluxo de dados.vhd=-1
-
-
-[file_out:/top_level.bde]
-/..\compile\top_level.vhd=-1
-[file_out:/Write_Back_Stage.bde]
-/..\compile\Write_Back_Stage.vhd=-1
-[file_out:/Acesso_Memoria_Stage.bde]
-/..\compile\Acesso_Memoria_Stage.vhd=-1
 [file_out:/Instruction_Fetch_stage.bde]
 /..\compile\Instruction_Fetch_stage.vhd=-1
 [file_out:/Instruction_Decode_Stage.bde]
 /..\compile\Instruction_Decode_Stage.vhd=-1
 [file_out:/Instruction_Execute_Stage.bde]
 /..\compile\Instruction_Execute_Stage.vhd=-1
+[file_out:/Acesso_Memoria_Stage.bde]
+/..\compile\Acesso_Memoria_Stage.vhd=-1
+[file_out:/Fluxo de dados.bde]
+/..\compile\Fluxo de dados.vhd=-1
+[file_out:/Write_Back_Stage.bde]
+/..\compile\Write_Back_Stage.vhd=-1
+[file_out:/top_level.bde]
+/..\compile\top_level.vhd=-1

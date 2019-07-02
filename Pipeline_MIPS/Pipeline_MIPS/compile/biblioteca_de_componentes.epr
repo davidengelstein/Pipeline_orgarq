@@ -1,2 +1,12 @@
+".\..\compile\Instruction_Fetch_stage.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
+".\..\compile\Instruction_Decode_Stage.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
 ".\..\compile\Instruction_Execute_Stage.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
+".\..\compile\Acesso_Memoria_Stage.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
+"C:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Controle_ALU.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
+".\..\compile\Fluxo de dados.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
+".\..\compile\Write_Back_Stage.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
+"C:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_D.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
+"C:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Controle.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
+"C:\Users\david\OneDrive\Documentos\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
+".\..\compile\top_level.vhd" VHDL biblioteca_de_componentes 1 0 0 -02
 . . 0 0 0

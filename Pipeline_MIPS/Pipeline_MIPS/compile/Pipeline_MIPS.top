@@ -1,2 +1,2 @@
+top_level ENTITY
 Instruction_Fetch_sstage ENTITY
-Instruction_Decode_Stage ENTITY
