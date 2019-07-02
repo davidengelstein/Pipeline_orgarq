@@ -49,33 +49,18 @@ HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
-
-[file_out:/Write_Back_Stage.bde]
-/..\compile\Write_Back_Stage.vhd=-1
-
-[file_out:/Instruction_Decode_Stage.bde]
-/..\compile\Instruction_Decode_Stage.vhd=-1
-
-[file_out:/Instruction_Execute_Stage.bde]
-/..\compile\Instruction_Execute_Stage.vhd=-1
-
-[file_out:/Acesso_Memoria_Stage.bde]
-/..\compile\Acesso_Memoria_Stage.vhd=-1
-
-[file_out:/Esquema_Geral.bde]
-/..\compile\Esquema_Geral.vhd=-1
-
 [Files]
 /Instruction_Fetch_stage.bde=-1
 /Instruction_Decode_Stage.bde=-1
 /Instruction_Execute_Stage.bde=-1
 /Acesso_Memoria_Stage.bde=-1
 /Controle_ALU.vhd=-1
-/Esquema_Geral.bde=-1
+/Fluxo de dados.bde=-1
 /Write_Back_Stage.bde=-1
 /cache_D.vhd=-1
 /Controle.vhd=-1
 /cache_I.vhd=-1
+/top_level.bde=-1
 
 [Files.Data]
 .\src\Instruction_Fetch_stage.bde=Block Diagram
@@ -83,12 +68,36 @@ Selected=
 .\src\Instruction_Execute_Stage.bde=Block Diagram
 .\src\Acesso_Memoria_Stage.bde=Block Diagram
 .\src\Controle_ALU.vhd=VHDL Source Code
-.\src\Esquema_Geral.bde=Block Diagram
+.\src\Fluxo de dados.bde=Block Diagram
 .\src\Write_Back_Stage.bde=Block Diagram
 .\src\cache_D.vhd=VHDL Source Code
 .\src\Controle.vhd=VHDL Source Code
 .\src\cache_I.vhd=VHDL Source Code
+.\src\top_level.bde=Block Diagram
+.\compile\top_level.vhd=VHDL Source Code
+.\compile\Write_Back_Stage.vhd=VHDL Source Code
+.\compile\Acesso_Memoria_Stage.vhd=VHDL Source Code
+.\compile\Instruction_Execute_Stage.vhd=VHDL Source Code
+.\compile\Instruction_Decode_Stage.vhd=VHDL Source Code
 .\compile\Instruction_Fetch_stage.vhd=VHDL Source Code
 
+
+
+
+
+[file_out:/Fluxo de dados.bde]
+/..\compile\Fluxo de dados.vhd=-1
+
+
+[file_out:/top_level.bde]
+/..\compile\top_level.vhd=-1
+[file_out:/Write_Back_Stage.bde]
+/..\compile\Write_Back_Stage.vhd=-1
+[file_out:/Acesso_Memoria_Stage.bde]
+/..\compile\Acesso_Memoria_Stage.vhd=-1
 [file_out:/Instruction_Fetch_stage.bde]
 /..\compile\Instruction_Fetch_stage.vhd=-1
+[file_out:/Instruction_Decode_Stage.bde]
+/..\compile\Instruction_Decode_Stage.vhd=-1
+[file_out:/Instruction_Execute_Stage.bde]
+/..\compile\Instruction_Execute_Stage.vhd=-1

@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd
--- Generated   : Tue Jul  2 01:31:34 2019
+-- Generated   : Tue Jul  2 01:59:22 2019
 -- From        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -171,7 +171,7 @@ Branch <= Controle(4);
 
 EXE_MEM : Reg_ClkEnable
   generic map(
-       NumeroBits => 107
+       NumeroBits => 108
   )
   port map(
        C => NET704,
@@ -208,7 +208,7 @@ U12 : Mux2x1
 
 U2 : Mux2x1
   generic map(
-       NB => 4
+       NB => 5
   )
   port map(
        I0 => Rt(4 downto 0),

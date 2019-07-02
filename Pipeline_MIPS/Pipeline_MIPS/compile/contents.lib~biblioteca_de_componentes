@@ -1,10 +1,10 @@
-12885
+12986
 ~E 1 "./compile/absminmaxsomsub.vhd" 26 absminmaxsomsub
 ~A 1 "./compile/absminmaxsomsub.vhd" 42 absminmaxsomsub
 ~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Acesso_Memoria_Stage.vhd" 27 Acesso_Memoria
 ~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Acesso_Memoria_Stage.vhd" 38 Acesso_Memoria
 ~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle_ALU.vhd" 28 ALU_Control
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle_ALU.vhd" 38 ALU_Control
+~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle_ALU.vhd" 38 alu_control
 ~E 1 "./compile/And_NE.vhd" 25 And_NE
 ~A 1 "./compile/And_NE.vhd" 35 and_ne
 ~E 0 "" 0 ativar_registradores
@@ -13,13 +13,13 @@
 ~E 1 "./compile/buffertristate.vhd" 25 bufferTristate
 ~A 1 "./compile/buffertristate.vhd" 38 buffertristate
 ~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 31 cache_D
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 43 cache_D
+~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 43 cache_d
 ~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 31 Cache_I
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 40 Cache_I
+~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 40 cache_i
 ~E 1 "./compile/contador.vhd" 26 contador
 ~A 1 "./compile/contador.vhd" 45 contador
 ~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle.vhd" 28 Controle
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle.vhd" 37 Controle
+~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle.vhd" 37 controle
 ~E 1 "./compile/CSA.vhd" 25 CSA
 ~A 1 "./compile/CSA.vhd" 40 csa
 ~E 1 "./compile/Decodificador.vhd" 24 Decodificador
@@ -35,7 +35,7 @@
 ~E 1 "./compile/DualRegFile.vhd" 25 DualRegFile
 ~A 1 "./compile/DualRegFile.vhd" 43 dualregfile
 ~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Esquema_Geral.vhd" 27 Esquema_Geral
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Esquema_Geral.vhd" 33 Esquema_Geral
+~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Fluxo de dados.vhd" 33 esquema_geral
 ~E 1 "./compile/FA.vhd" 28 FA
 ~A 1 "./compile/FA.vhd" 38 fa
 ~E 0 "" 0 FD_MBcS
@@ -43,7 +43,7 @@
 ~E 1 "./compile/FFD.vhd" 25 FFD
 ~A 1 "./compile/FFD.vhd" 39 ffd
 ~E 0 "" 0 Fluxo_de_dados
-~A 0 "" 0 Fluxo_de_dados
+~A 0 "" 0 fluxo_de_dados
 ~E 0 "" 0 Fub1
 ~E 1 "./compile/Fuse_and.vhd" 25 Fuse
 ~A 1 "./compile/Fuse_and.vhd" 34 fuse
@@ -100,7 +100,7 @@
 ~E 1 "./compile/Ram_sem_carga.vhd" 29 RAM_sem_carga
 ~A 1 "./compile/Ram_sem_carga.vhd" 49 ram_sem_carga
 ~E 1 "c:/My_Designs/Projeto_OrgArq/Pipeline/compile/Reg32bits.vhd" 24 Reg32bits
-~A 0 "" 0 Reg32bits
+~A 0 "" 0 reg32bits
 ~E 1 "./compile/Reg_ClkEnable.vhd" 24 Reg_ClkEnable
 ~A 1 "./compile/Reg_ClkEnable.vhd" 40 reg_clkenable
 ~E 1 "./compile/RegFile.vhd" 25 RegFile
@@ -130,6 +130,8 @@
 ~A 1 "./compile/TesteMem.vhd" 41 testemem
 ~E 1 "./src/fill_memory.vhd" 8 testfill
 ~A 1 "./src/fill_memory.vhd" 13 fillmem
+~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/top_level.vhd" 27 top_level
+~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/top_level.vhd" 33 top_level
 ~E 0 "" 0 UC_MBcS
 ~E 0 "" 0 UC_MultDeBooth
 ~E 1 "./compile/ULA.vhd" 26 ULA

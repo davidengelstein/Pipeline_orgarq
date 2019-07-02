@@ -3,8 +3,9 @@
 .\src\Instruction_Execute_Stage.bde
 .\src\Acesso_Memoria_Stage.bde
 .\src\Controle_ALU.vhd
-.\src\Esquema_Geral.bde
+.\src\Fluxo de dados.bde
 .\src\Write_Back_Stage.bde
 .\src\cache_D.vhd
 .\src\Controle.vhd
 .\src\cache_I.vhd
+.\src\top_level.bde

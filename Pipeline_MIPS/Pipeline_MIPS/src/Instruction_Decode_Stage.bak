@@ -2,30 +2,31 @@ SCHM0106
 
 HEADER
 {
- FREEID 1575
+ FREEID 1628
  VARIABLES
  {
   #ARCHITECTURE="Instruction_Decode_Stage"
   #BLOCKTABLE_FILE="#table.bde"
   #BLOCKTABLE_INCLUDED="1"
-  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"controle\"><left=\"9\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"control\"><left=\"9\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #DEFAULT_RANGE1="<range<index=\"0\"><name=\"ctrl_arit\"><left=\"10\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"endjump\"><left=\"25\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"ext_immed_off\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE4="<range<index=\"0\"><name=\"id_ex_in\"><left=\"173\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE5="<range<index=\"0\"><name=\"immed_offset\"><left=\"15\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE6="<range<index=\"0\"><name=\"inst\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE7="<range<index=\"0\"><name=\"opcode\"><left=\"5\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE8="<range<index=\"0\"><name=\"outid\"><left=\"173\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE9="<range<index=\"0\"><name=\"outif\"><left=\"63\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE10="<range<index=\"0\"><name=\"pc_mais_quatro\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE11="<range<index=\"0\"><name=\"rd\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE12="<range<index=\"0\"><name=\"regdst\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE13="<range<index=\"0\"><name=\"regdstdata\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE14="<range<index=\"0\"><name=\"rs\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE15="<range<index=\"0\"><name=\"rsdata\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE16="<range<index=\"0\"><name=\"rt\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE17="<range<index=\"0\"><name=\"rtdata\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"enda\"><left=\"5\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"endjump\"><left=\"25\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE4="<range<index=\"0\"><name=\"ext_immed_off\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE5="<range<index=\"0\"><name=\"id_ex_in\"><left=\"173\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE6="<range<index=\"0\"><name=\"immed_offset\"><left=\"15\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE7="<range<index=\"0\"><name=\"inst\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE8="<range<index=\"0\"><name=\"opcode\"><left=\"5\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE9="<range<index=\"0\"><name=\"outid\"><left=\"173\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE10="<range<index=\"0\"><name=\"outif\"><left=\"63\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE11="<range<index=\"0\"><name=\"pc_mais_quatro\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE12="<range<index=\"0\"><name=\"rd\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE13="<range<index=\"0\"><name=\"regdst\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE14="<range<index=\"0\"><name=\"regdstdata\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE15="<range<index=\"0\"><name=\"rs\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE16="<range<index=\"0\"><name=\"rsdata\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE17="<range<index=\"0\"><name=\"rt\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE18="<range<index=\"0\"><name=\"rtdata\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #ENTITY="Instruction_Decode_Stage"
   #LANGUAGE="VHDL"
   AUTHOR="Igor Ortega"
@@ -882,7 +883,7 @@ PAGE ""
    SHOWLABEL
    SHOWTEXT
    CORNER 10
-   VTX (  160, 263, 426, 703, 847, 916, 1140, 1510 )
+   VTX (  160, 263, 426, 703, 847, 916, 1140, 1575 )
   }
   VTX  159, 0, 0
   {
@@ -997,7 +998,7 @@ PAGE ""
    TEXT "$#NAME"
    RECT (511,193,650,220)
    ALIGN 9
-   PARENT 1513
+   PARENT 1580
   }
   NET BUS  258, 0, 0
   {
@@ -1132,7 +1133,6 @@ PAGE ""
    MARGINS (1,1)
    PARENT 353
   }
-  NET BUS  370, 0, 0
   VTX  425, 0, 0
   {
    COORD (360,1440)
@@ -1427,7 +1427,7 @@ PAGE ""
 "ID_EX_In(105 downto 74)<=RsData(31 downto 0);\n"+
 "ID_EX_In(131 downto 106)<=endJump(25 downto 0);\n"+
 "ID_EX_In(163 downto 132)<=PC_mais_quatro(31 downto 0);\n"+
-"ID_EX_In(173 downto 164) <= controle(9 downto 0) ; "
+"ID_EX_In(173 downto 164) <= control(9 downto 0) ; "
    RECT (1240,440,2080,820)
    OUTLINE 5,1, (0,0,0)
    FILL (0,(255,255,156),0)
@@ -1438,7 +1438,7 @@ PAGE ""
    SHOWLABEL
    SHOWTEXT
    CORNER 10
-   VTX (  832, 917, 1131, 1133, 1135, 1137, 1139, 1141, 1495 )
+   VTX (  832, 917, 1131, 1133, 1135, 1137, 1139, 1141, 1577 )
   }
   VTX  703, 0, 0
   {
@@ -1682,7 +1682,7 @@ PAGE ""
   }
   BUS  867, 0, 0
   {
-   NET 370
+   NET 1609
    VTX 845, 866
   }
   VTX  868, 0, 0
@@ -1691,12 +1691,12 @@ PAGE ""
   }
   BUS  869, 0, 0
   {
-   NET 370
+   NET 1609
    VTX 866, 868
   }
   BUS  870, 0, 0
   {
-   NET 370
+   NET 1609
    VTX 868, 846
   }
   VTX  871, 0, 0
@@ -2039,19 +2039,12 @@ PAGE ""
    ALIGN 9
    PARENT 1290
   }
-  NET BUS  1266, 0, 0
-  {
-   VARIABLES
-   {
-    #NAME="Controle(9:0)"
-   }
-  }
   TEXT  1267, 0, 0
   {
    TEXT "$#NAME"
-   RECT (1050,53,1190,80)
+   RECT (917,33,1039,60)
    ALIGN 9
-   PARENT 1497
+   PARENT 1590
   }
   NET BUS  1268, 0, 0
   {
@@ -2172,13 +2165,13 @@ PAGE ""
     #SYMBOL="Controle"
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a4e53f91-7f9a-4c9b-a991-96d715c10e34"
    }
-   COORD (540,40)
-   VERTEXES ( (4,1494), (2,1521) )
+   COORD (360,20)
+   VERTEXES ( (2,1576), (4,1578) )
   }
   TEXT  1487, 0, 0
   {
    TEXT "$#REFERENCE"
-   RECT (540,4,579,39)
+   RECT (360,-16,399,19)
    ALIGN 8
    MARGINS (1,1)
    PARENT 1486
@@ -2186,80 +2179,101 @@ PAGE ""
   TEXT  1488, 0, 0
   {
    TEXT "$#COMPONENT"
-   RECT (680,120,792,155)
+   RECT (500,100,612,135)
    MARGINS (1,1)
    PARENT 1486
   }
-  VTX  1494, 0, 0
-  {
-   COORD (840,80)
-  }
-  VTX  1495, 0, 0
-  {
-   COORD (1820,440)
-  }
-  VTX  1496, 0, 0
-  {
-   COORD (1820,80)
-  }
-  BUS  1497, 0, 0
-  {
-   NET 1266
-   VTX 1494, 1496
-  }
-  BUS  1498, 0, 0
-  {
-   NET 1266
-   VTX 1496, 1495
-  }
-  VTX  1510, 0, 0
+  VTX  1575, 0, 0
   {
    COORD (1100,620)
   }
-  VTX  1512, 0, 0
+  VTX  1576, 0, 0
+  {
+   COORD (360,60)
+  }
+  VTX  1577, 0, 0
+  {
+   COORD (1820,440)
+  }
+  VTX  1578, 0, 0
+  {
+   COORD (660,60)
+  }
+  VTX  1579, 0, 0
   {
    COORD (1180,620)
   }
-  BUS  1513, 0, 0
+  BUS  1580, 0, 0
   {
    NET 252
-   VTX 1510, 1512
+   VTX 1575, 1579
   }
-  VTX  1514, 0, 0
+  VTX  1581, 0, 0
   {
    COORD (1180,180)
   }
-  BUS  1515, 0, 0
+  BUS  1582, 0, 0
   {
    NET 252
-   VTX 1512, 1514
+   VTX 1579, 1581
   }
-  VTX  1516, 0, 0
+  VTX  1583, 0, 0
   {
-   COORD (400,180)
+   COORD (320,180)
   }
-  BUS  1517, 0, 0
-  {
-   NET 252
-   VTX 1514, 1516
-  }
-  VTX  1518, 0, 0
-  {
-   COORD (400,80)
-  }
-  BUS  1519, 0, 0
+  BUS  1584, 0, 0
   {
    NET 252
-   VTX 1516, 1518
+   VTX 1581, 1583
   }
-  VTX  1521, 0, 0
+  VTX  1585, 0, 0
   {
-   COORD (540,80)
+   COORD (320,60)
   }
-  BUS  1523, 0, 0
+  BUS  1586, 0, 0
   {
    NET 252
-   VTX 1518, 1521
+   VTX 1583, 1585
+  }
+  BUS  1587, 0, 0
+  {
+   NET 252
+   VTX 1585, 1576
+  }
+  VTX  1588, 0, 0
+  {
+   COORD (1820,60)
+  }
+  BUS  1589, 0, 0
+  {
+   NET 1591
+   VTX 1577, 1588
+  }
+  BUS  1590, 0, 0
+  {
+   NET 1591
+   VTX 1588, 1578
+  }
+  NET BUS  1591, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="control(9:0)"
+   }
+  }
+  NET BUS  1609, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="endA(5:0)"
+   }
+  }
+  TEXT  1610, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (518,1372,623,1399)
+   ALIGN 9
+   PARENT 867
   }
  }
  
@@ -2286,7 +2300,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  1558, 0, 0
+  TEXT  1611, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -2297,7 +2311,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1559, 0, 0
+  TEXT  1612, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -2308,7 +2322,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1560, 0, 0
+  TEXT  1613, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -2318,7 +2332,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1561, 0, 0
+  TEXT  1614, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -2330,7 +2344,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1562, 0, 0
+  TEXT  1615, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -2343,7 +2357,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  1563, 0, 0
+  TEXT  1616, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -2353,7 +2367,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1564, 0, 0
+  TEXT  1617, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -2365,7 +2379,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1565, 0, 0
+  TEXT  1618, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -2375,7 +2389,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1566, 0, 0
+  TEXT  1619, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -2386,7 +2400,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  1567, 0, 0
+  GROUP  1620, 0, 0
   {
    PAGEALIGN 10
    RECT (1100,1120,1981,1501)
@@ -2398,7 +2412,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1568, 0, 0
+  GROUP  1621, 0, 0
   {
    PAGEALIGN 10
    RECT (1100,1320,1981,1321)
@@ -2410,7 +2424,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1569, 0, 0
+  GROUP  1622, 0, 0
   {
    PAGEALIGN 10
    RECT (1100,1260,1981,1261)
@@ -2422,7 +2436,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1570, 0, 0
+  GROUP  1623, 0, 0
   {
    PAGEALIGN 10
    RECT (1100,1380,1981,1381)
@@ -2434,7 +2448,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1571, 0, 0
+  GROUP  1624, 0, 0
   {
    PAGEALIGN 10
    RECT (1100,1440,1981,1441)
@@ -2446,7 +2460,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1572, 0, 0
+  GROUP  1625, 0, 0
   {
    PAGEALIGN 10
    RECT (1280,1120,1281,1261)
@@ -2457,7 +2471,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  1573, 0, 0
+  GROUP  1626, 0, 0
   {
    PAGEALIGN 10
    RECT (1280,1260,1281,1501)
@@ -2468,7 +2482,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  1574, 0, 0
+  BMPPICT  1627, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1180,1259,1225)

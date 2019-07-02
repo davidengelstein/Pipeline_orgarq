@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Decode_Stage.vhd
--- Generated   : Tue Jul  2 01:31:31 2019
+-- Generated   : Tue Jul  2 01:56:57 2019
 -- From        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -110,8 +110,8 @@ constant VCC_CONSTANT   : STD_LOGIC := '1';
 ---- Signal declarations used on the diagram ----
 
 signal VCC : STD_LOGIC;
-signal BUS370 : STD_LOGIC_VECTOR(7 downto 0);
 signal control : STD_LOGIC_VECTOR(9 downto 0);
+signal endA : STD_LOGIC_VECTOR(4 downto 0);
 signal endJump : STD_LOGIC_VECTOR(25 downto 0);
 signal ext_immed_off : STD_LOGIC_VECTOR(31 downto 0);
 signal ID_EX_In : STD_LOGIC_VECTOR(173 downto 0);
@@ -161,7 +161,7 @@ Banco_De_Registradores : dualregfile
        dadoina => regDstData(31 downto 0),
        dadoouta => RtData(31 downto 0),
        dadooutb => RsData(31 downto 0),
-       enda => BUS370(7 downto 0),
+       enda => endA(4 downto 0),
        endb => Rs(4 downto 0),
        we => RegWrite
   );
@@ -196,7 +196,7 @@ Read_Write_Mux : Mux2x1
   port map(
        I0 => Rt(4 downto 0),
        I1 => regDst(4 downto 0),
-       O => BUS370(7 downto 0),
+       O => endA(4 downto 0),
        Sel => RegWrite
   );
 

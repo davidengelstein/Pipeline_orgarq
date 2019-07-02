@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd
--- Generated   : Tue Jul  2 01:37:42 2019
+-- Generated   : Tue Jul  2 01:54:49 2019
 -- From        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -137,7 +137,7 @@ U6 : Reg_ClkEnable
 
 U7 : Mux2x1
   generic map(
-       NB => 35
+       NB => 32
   )
   port map(
        I0 => PC_mais_quatro(31 downto 0),
