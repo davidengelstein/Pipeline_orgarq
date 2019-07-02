@@ -1,11 +1,5 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: .\..\compile\Instruction_Execute_Stage.vhd" 
-MESSAGE "Compile Entity "Instruction_Execute_Stage"" 
-MESSAGE "Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"" 
-ERROR COMP96_0078: "Unknown identifier "Rt"." ".\..\compile\Instruction_Execute_Stage.vhd" 125 1
-ERROR COMP96_0133: "Cannot find object declaration." ".\..\compile\Instruction_Execute_Stage.vhd" 125 1
-ERROR COMP96_0078: "Unknown identifier "Rd"." ".\..\compile\Instruction_Execute_Stage.vhd" 126 1
-ERROR COMP96_0133: "Cannot find object declaration." ".\..\compile\Instruction_Execute_Stage.vhd" 126 1
-ERROR COMP96_0078: "Unknown identifier "end_jump"." ".\..\compile\Instruction_Execute_Stage.vhd" 130 1
-ERROR COMP96_0133: "Cannot find object declaration." ".\..\compile\Instruction_Execute_Stage.vhd" 130 1
-FAILURE "Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]" 
+MESSAGE "File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd" 
+MESSAGE "Compile Entity "cache_I"" 
+MESSAGE "Compile Architecture "cache_I" of Entity "cache_I"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 

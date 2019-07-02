@@ -1,8 +1,8 @@
-timestamp=1561943560899
+timestamp=1562039782478
 
 [~A]
 Comment=Componentes PCS2307, PCS2022
-ModifyID=12712
+ModifyID=12737
 Version=74
 
 [absminmaxsomsub]
@@ -40,6 +40,29 @@ R=./compile/buffertristate.vhd|25
 S/buffertristate=40|0|2*4112
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|c46b096717501b0d133153897859b200e81acb6d76614715b106284d667c00806b1c5d86160807b0b70490a55da3d153
 Version/buffertristate=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|c46b096717501b0d133153897859b200e81acb6d76614715b106284d667c0080e03ac4b79c0474ce1d853b16dcb29a77
+
+[cache_d]
+A/cache_d=A/cache_D 21|./../Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd|43|1*260268
+BinI32/cache_d=3*39998
+I=0*155292
+I/cache_d=I/cache_D 0*156126
+M=11|0|vde|1562039735602|./../Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd|0*154823*0x8b042f42e0fa8d1e7ea97f11de85eaeee17ca83b|0*155183*0x23b75c12e3e89f2ef000564498faa8c2
+M/cache_d=M/cache_D 21|0|vde|1562039735604|./../Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd|0*155493*0x26750ba24bdcd7f15acc9b58bcb0a4cb9392d504|0*156006*0x20116f55b147878295aeff36dce7fc50
+R=./../Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd|31
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|1db8effde5bc96bf1c0eba574522467226527262ddaa47cb266f3a3c4d9b973ac93110c8d2a221e940f85236814fe983
+Version/cache_d=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|1db8effde5bc96bf1c0eba574522467226527262ddaa47cb266f3a3c4d9b973ac93110c8d2a221e940f85236814fe983
+
+[cache_i]
+A/cache_i=A/cache_I 21|./../Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd|40|1*261861
+BinI32/cache_i=3*40329
+I=0*156913
+I/cache_i=I/cache_I 0*158007
+M=11|0|vde|1562039782455|./../Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd|0*156535*0xeaacf9cd5e067d1741262c55b7f6de8c730506c8|0*156804*0x23b75c12e3e89f2ef000564498faa8c2
+M/cache_i=M/cache_I 21|0|vde|1562039782457|./../Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd|0*157114*0xfcea138f4e5e795a3af1b6cb32889da6c586620c|0*157887*0x20116f55b147878295aeff36dce7fc50
+NSymbols/cache_i=NSymbols/cache_I 40|0|2*127689
+R=./../Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd|31
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|0f11678251b8cd27233cc08b6d3f005f26527262ddaa47cb266f3a3c4d9b973aa06277bb3e6f7ff1500059396950bf67
+Version/cache_i=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|0f11678251b8cd27233cc08b6d3f005f26527262ddaa47cb266f3a3c4d9b973a3abd87cac18e9d38c31efe3dbcc38af7
 
 [contador]
 A/contador=24|.\src\contador.bde|10000|1*187491
@@ -160,6 +183,9 @@ NSymbols/ffd=NSymbols/FFD 40|0|2*31816
 R=./compile/FFD.vhd|25
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|dcfd268ed5b9f95be2f60a9c414fd9d0195d0e3920dad0a90f04754a0bcb9bff
 Version/ffd=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|dcfd268ed5b9f95be2f60a9c414fd9d055a0e782d8c7081e86725c1aa7783c72
+
+[fub1]
+A/fub1=A/Fub1 21|.\..\Pipeline_MIPS\Pipeline_MIPS\src\Fub1.vhd|10000|
 
 [fuse]
 A/fuse=A/Fuse 24|.\src\Fuse_and.bde|10000|1*175891
@@ -603,15 +629,17 @@ Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|56d06ac7f7f65368f
 Version/xzero=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|56d06ac7f7f65368f4591aa3c0074e82f7aec82cbc58362066c98c3833a72599
 
 [~MFT]
-0=4|0Biblioteca_de_Componentes.mgf|147192|48246
-1=0|1Biblioteca_de_Componentes.mgf|244464|159030
-2=0|2Biblioteca_de_Componentes.mgf|120133|4423
-3=0|3Biblioteca_de_Componentes.mgf|38364|0
+0=16|0Biblioteca_de_Componentes.mgf|158007|55327
+1=2|1Biblioteca_de_Componentes.mgf|261861|165702
+2=0|2Biblioteca_de_Componentes.mgf|127689|7328
+3=2|3Biblioteca_de_Componentes.mgf|40329|828
 
 [~U]
 absminmaxsomsub=11|0*52176||0x3
 and_ne=And_NE 11|0*53051||0x3
 buffertristate=bufferTristate 11|0*53677||0x3
+cache_d=cache_D 11|0*154597|
+cache_i=cache_I 11|0*156335||0x3
 contador=11|0*54374||0x3
 csa=CSA 11|0*55214||0x3
 decodificador=Decodificador 11|0*55878||0x3
@@ -622,6 +650,7 @@ deslocador_combinatorio=11|0*58856||0x3
 dualregfile=DualRegFile 11|0*59584||0x3
 fa=FA 11|0*60375||0x3
 ffd=FFD 11|0*60977||0x3
+fub1=Fub1 11||
 fuse=Fuse 11|0*61591|
 fuse_and=Fuse_and 11|0*62166||0x3
 fuse_ou=11|0*62344||0x3

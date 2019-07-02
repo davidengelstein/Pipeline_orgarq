@@ -1,3 +1,9 @@
 .\src\Instruction_Fetch_stage.bde
 .\src\Instruction_Decode_Stage.bde
 .\src\Instruction_Execute_Stage.bde
+.\src\Acesso_Memoria_Stage.bde
+.\src\Controle_ALU.vhd
+.\src\Esquema_Geral.bde
+.\src\Write_Back_Stage.bde
+.\src\cache_I.vhd
+.\src\cache_D.vhd

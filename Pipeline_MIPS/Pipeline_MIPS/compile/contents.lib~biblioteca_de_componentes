@@ -1,8 +1,12 @@
-12712
+12737
 ~E 1 "./compile/absminmaxsomsub.vhd" 26 absminmaxsomsub
 ~A 1~E 1 "./compile/And_NE.vhd" 25 And_NE
 ~A 1~E 1 "./compile/buffertristate.vhd" 25 bufferTristate
-~A 1~E 1 "./compile/contador.vhd" 26 contador
+~A 1~E 1 "./../Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 31 cache_D
+~A 1 "./../Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 43 cache_D
+~E 1 "./../Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 31 cache_I
+~A 1 "./../Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 40 cache_I
+~E 1 "./compile/contador.vhd" 26 contador
 ~A 1~E 1 "./compile/CSA.vhd" 25 CSA
 ~A 1~E 1 "./compile/Decodificador.vhd" 24 Decodificador
 ~A 1~E 1 "./compile/deslocad1.vhd" 26 DeslocaD1
@@ -12,18 +16,18 @@
 ~A 1~E 1 "./compile/DualRegFile.vhd" 25 DualRegFile
 ~A 1~E 1 "./compile/FA.vhd" 28 FA
 ~A 1~E 1 "./compile/FFD.vhd" 25 FFD
-~A 1~E 1 "./compile/Fuse_and.vhd" 25 Fuse
+~A 1~E 0 "" 0 Fub1
+~A 0 "" 0 Fub1
+~E 1 "./compile/Fuse_and.vhd" 25 Fuse
 ~A 1~E 0 "" 0 Fuse_and
 ~A 0 "" 0 fuse_and
 ~E 1 "./compile/fuse_ou.vhd" 25 fuse_ou
 ~A 1~E 1 "./compile/HA.vhd" 25 HA
 ~A 1~E 1 "./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd" 27 Instruction_Decode_Stage
-~A 1 "./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd" 40 Instruction_Decode_Stage
-~E 1 "./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Execute_Stage.vhd" 27 Instruction_Execute_Stage
+~A 1~E 1 "./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Execute_Stage.vhd" 27 Instruction_Execute_Stage
 ~A 0 "" 0 Instruction_Execute_Stage
 ~E 1 "./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 27 Instruction_Fetch_sstage
-~A 1 "./../Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 36 Instruction_Fetch_sstage
-~E 1 "./compile/Log_Sinc.vhd" 25 Log_Sinc
+~A 1~E 1 "./compile/Log_Sinc.vhd" 25 Log_Sinc
 ~A 1~E 1 "./compile/maisum.vhd" 26 maisum
 ~A 1~E 1 "./compile/maximo.vhd" 26 maximo
 ~A 1~E 1 "./compile/minimo.vhd" 26 minimo
