@@ -40,11 +40,10 @@ begin
 	Controle_ALU <= "0010" when ALUOp = "00" else
 					"0110" when ALUOp = "X1" else
 					"0010" when ALUOp = "1X" and funct = "XX0000" else
-					"0010" when ALUOp = "1X" and funct = "XX0010" else
-					"0010" when ALUOp = "1X" and funct = "XX0100" else
-					"0010" when ALUOp = "1X" and funct = "XX0101" else
-					"0010" when ALUOp = "1X" and funct = "XX1010";
-
+					"0110" when ALUOp = "1X" and funct = "XX0010" else
+					"0000" when ALUOp = "1X" and funct = "XX0100" else
+					"0001" when ALUOp = "1X" and funct = "XX0101" else
+					"0111" when ALUOp = "1X" and funct = "XX1010";
 	 -- enter your statements here --
 
 end Fub2;
