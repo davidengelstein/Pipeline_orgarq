@@ -1,0 +1,393 @@
+# Warning: Diagram structure inconsistencies encountered when opening "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/biblioteca_de_componentesv4.5/src/DualRegFile.bde".
+# Warning: Inconsistencies have been removed during loading and file has been marked as modified.
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Cache_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Cache_I.vhd
+# Compile Entity "cache_I"
+# Compile Architecture "cache_I" of Entity "cache_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/x.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\x.vhd
+# Compile Entity "cache_I"
+# Compile Architecture "cache_I" of Entity "cache_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/cache_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd
+# Compile Entity "Cache_I"
+# Compile Architecture "Cache_I" of Entity "Cache_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/cache_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd
+# Compile Entity "Cache_I"
+# Compile Architecture "Cache_I" of Entity "Cache_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Fetch_stage.bde $dsn/src/Instruction_Decode_Stage.bde $dsn/src/Instruction_Execute_Stage.bde $dsn/src/Acesso_Memoria_Stage.bde $dsn/src/Controle_ALU.vhd $dsn/src/Esquema_Geral.bde $dsn/src/Write_Back_Stage.bde $dsn/src/cache_D.vhd $dsn/src/Controle.vhd
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde'.
+# DRC: Warning: Instruction_Fetch_stage.bde - 0 error(s), 16 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde'.
+# DRC: Warning: Instruction_Decode_Stage.bde - 0 error(s), 13 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Decode_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde'.
+# DRC: Warning: Instruction_Execute_Stage.bde - 0 error(s), 24 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Acesso_Memoria_Stage.bde'.
+# DRC: Warning: Acesso_Memoria_Stage.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Acesso_Memoria_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Acesso_Memoria_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Esquema_Geral.bde'.
+# DRC: Warning: Esquema_Geral.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 4 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Esquema_Geral.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Esquema_Geral.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Write_Back_Stage.bde'.
+# DRC: Warning: Write_Back_Stage.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Write_Back_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Write_Back_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Fetch_stage.vhd
+# Compile Entity "Instruction_Fetch_sstage"
+# Compile Architecture "Instruction_Fetch_sstage" of Entity "Instruction_Fetch_sstage"
+# File: .\..\compile\Instruction_Decode_Stage.vhd
+# Compile Entity "Instruction_Decode_Stage"
+# Compile Architecture "Instruction_Decode_Stage" of Entity "Instruction_Decode_Stage"
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# File: .\..\compile\Acesso_Memoria_Stage.vhd
+# Compile Entity "Acesso_Memoria"
+# Compile Architecture "Acesso_Memoria" of Entity "Acesso_Memoria"
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Controle_ALU.vhd
+# Compile Entity "ALU_Control"
+# Compile Architecture "ALU_Control" of Entity "ALU_Control"
+# File: .\..\compile\Esquema_Geral.vhd
+# Compile Entity "Esquema_Geral"
+# Compile Architecture "Esquema_Geral" of Entity "Esquema_Geral"
+# File: .\..\compile\Write_Back_Stage.vhd
+# Compile Entity "Write_Back_Stage"
+# Compile Architecture "Write_Back_Stage" of Entity "Write_Back_Stage"
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_D.vhd
+# Compile Entity "cache_D"
+# Compile Architecture "cache_D" of Entity "cache_D"
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/cache_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd
+# Compile Entity "Cache_I"
+# Compile Architecture "Cache_I" of Entity "Cache_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Library Manager: Library "biblioteca_de_componentes" contents cleared.
+acom -reorder -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/cache_D.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_D.vhd
+# Compile Entity "cache_D"
+# Compile Architecture "cache_D" of Entity "cache_D"
+# Top-level unit(s) detected:
+# Entity => cache_D
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Fetch_stage.bde $dsn/src/Instruction_Decode_Stage.bde $dsn/src/Instruction_Execute_Stage.bde $dsn/src/Acesso_Memoria_Stage.bde $dsn/src/Controle_ALU.vhd $dsn/src/Esquema_Geral.bde $dsn/src/Write_Back_Stage.bde $dsn/src/cache_D.vhd $dsn/src/Controle.vhd $dsn/src/cache_I.vhd
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde'.
+# DRC: Warning: Instruction_Fetch_stage.bde - 0 error(s), 16 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde'.
+# DRC: Warning: Instruction_Decode_Stage.bde - 0 error(s), 13 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Decode_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde'.
+# DRC: Warning: Instruction_Execute_Stage.bde - 0 error(s), 24 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Acesso_Memoria_Stage.bde'.
+# DRC: Warning: Acesso_Memoria_Stage.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Acesso_Memoria_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Acesso_Memoria_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Esquema_Geral.bde'.
+# DRC: Warning: Esquema_Geral.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 4 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Esquema_Geral.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Esquema_Geral.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Write_Back_Stage.bde'.
+# DRC: Warning: Write_Back_Stage.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Write_Back_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Write_Back_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Fetch_stage.vhd
+# Compile Entity "Instruction_Fetch_sstage"
+# Compile Architecture "Instruction_Fetch_sstage" of Entity "Instruction_Fetch_sstage"
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (129, 0): There is no default binding for component "ram". (No entity named "ram" was found).
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (138, 0): There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found).
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (151, 0): There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found).
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (162, 0): There is no default binding for component "somador". (No entity named "somador" was found).
+# File: .\..\compile\Instruction_Decode_Stage.vhd
+# Compile Entity "Instruction_Decode_Stage"
+# Compile Architecture "Instruction_Decode_Stage" of Entity "Instruction_Decode_Stage"
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (154, 0): There is no default binding for component "dualregfile". (No entity named "dualregfile" was found).
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (169, 0): There is no default binding for component "xsign". (No entity named "xsign" was found).
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (179, 0): There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found).
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (192, 0): There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found).
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (203, 0): There is no default binding for component "Controle". (No entity named "Controle" was found).
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# Warning: ELAB1_0026: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (172, 0): There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found).
+# Warning: ELAB1_0026: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (185, 0): There is no default binding for component "ula". (No entity named "ula" was found).
+# Warning: ELAB1_0026: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (198, 0): There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found).
+# Warning: ELAB1_0026: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (220, 0): There is no default binding for component "ALU_Control". (No entity named "ALU_Control" was found).
+# Warning: ELAB1_0026: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (252, 0): There is no default binding for component "deslocador_combinatorio". (No entity named "deslocador_combinatorio" was found).
+# File: .\..\compile\Acesso_Memoria_Stage.vhd
+# Compile Entity "Acesso_Memoria"
+# Compile Architecture "Acesso_Memoria" of Entity "Acesso_Memoria"
+# Warning: ELAB1_0026: Acesso_Memoria_Stage.bde(Acesso_Memoria_Stage.vhd) : (114, 0): There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found).
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Controle_ALU.vhd
+# Compile Entity "ALU_Control"
+# Compile Architecture "ALU_Control" of Entity "ALU_Control"
+# File: .\..\compile\Esquema_Geral.vhd
+# Compile Entity "Esquema_Geral"
+# Compile Architecture "Esquema_Geral" of Entity "Esquema_Geral"
+# Warning: ELAB1_0026: Esquema_Geral.bde(Esquema_Geral.vhd) : (131, 0): There is no default binding for component "Write_Back_Stage". (No entity named "Write_Back_Stage" was found).
+# File: .\..\compile\Write_Back_Stage.vhd
+# Compile Entity "Write_Back_Stage"
+# Compile Architecture "Write_Back_Stage" of Entity "Write_Back_Stage"
+# Warning: ELAB1_0026: Write_Back_Stage.bde(Write_Back_Stage.vhd) : (75, 0): There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found).
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_D.vhd
+# Compile Entity "cache_D"
+# Compile Architecture "cache_D" of Entity "cache_D"
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd
+# Compile Entity "Cache_I"
+# Compile Architecture "Cache_I" of Entity "Cache_I"
+# Compile success 0 Errors 17 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Fetch_stage.bde $dsn/src/Instruction_Decode_Stage.bde $dsn/src/Instruction_Execute_Stage.bde $dsn/src/Acesso_Memoria_Stage.bde $dsn/src/Controle_ALU.vhd $dsn/src/Esquema_Geral.bde $dsn/src/Write_Back_Stage.bde $dsn/src/cache_D.vhd $dsn/src/Controle.vhd $dsn/src/cache_I.vhd
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde'.
+# DRC: Warning: Instruction_Fetch_stage.bde - 0 error(s), 16 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde'.
+# DRC: Warning: Instruction_Decode_Stage.bde - 0 error(s), 13 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Decode_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde'.
+# DRC: Warning: Instruction_Execute_Stage.bde - 0 error(s), 24 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Acesso_Memoria_Stage.bde'.
+# DRC: Warning: Acesso_Memoria_Stage.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Acesso_Memoria_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Acesso_Memoria_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Esquema_Geral.bde'.
+# DRC: Warning: Esquema_Geral.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 4 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Esquema_Geral.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Esquema_Geral.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Write_Back_Stage.bde'.
+# DRC: Warning: Write_Back_Stage.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Write_Back_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Write_Back_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Fetch_stage.vhd
+# Compile Entity "Instruction_Fetch_sstage"
+# Compile Architecture "Instruction_Fetch_sstage" of Entity "Instruction_Fetch_sstage"
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (129, 0): There is no default binding for component "ram". (No entity named "ram" was found).
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (138, 0): There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found).
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (151, 0): There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found).
+# Warning: ELAB1_0026: Instruction_Fetch_stage.bde(Instruction_Fetch_stage.vhd) : (162, 0): There is no default binding for component "somador". (No entity named "somador" was found).
+# File: .\..\compile\Instruction_Decode_Stage.vhd
+# Compile Entity "Instruction_Decode_Stage"
+# Compile Architecture "Instruction_Decode_Stage" of Entity "Instruction_Decode_Stage"
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (154, 0): There is no default binding for component "dualregfile". (No entity named "dualregfile" was found).
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (169, 0): There is no default binding for component "xsign". (No entity named "xsign" was found).
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (179, 0): There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found).
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (192, 0): There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found).
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# Warning: ELAB1_0026: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (172, 0): There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found).
+# Warning: ELAB1_0026: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (185, 0): There is no default binding for component "ula". (No entity named "ula" was found).
+# Warning: ELAB1_0026: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (198, 0): There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found).
+# Warning: ELAB1_0026: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (252, 0): There is no default binding for component "deslocador_combinatorio". (No entity named "deslocador_combinatorio" was found).
+# File: .\..\compile\Acesso_Memoria_Stage.vhd
+# Compile Entity "Acesso_Memoria"
+# Compile Architecture "Acesso_Memoria" of Entity "Acesso_Memoria"
+# Warning: ELAB1_0026: Acesso_Memoria_Stage.bde(Acesso_Memoria_Stage.vhd) : (114, 0): There is no default binding for component "Reg_ClkEnable". (No entity named "Reg_ClkEnable" was found).
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Controle_ALU.vhd
+# Compile Entity "ALU_Control"
+# Compile Architecture "ALU_Control" of Entity "ALU_Control"
+# File: .\..\compile\Esquema_Geral.vhd
+# Compile Entity "Esquema_Geral"
+# Compile Architecture "Esquema_Geral" of Entity "Esquema_Geral"
+# File: .\..\compile\Write_Back_Stage.vhd
+# Compile Entity "Write_Back_Stage"
+# Compile Architecture "Write_Back_Stage" of Entity "Write_Back_Stage"
+# Warning: ELAB1_0026: Write_Back_Stage.bde(Write_Back_Stage.vhd) : (75, 0): There is no default binding for component "Mux2x1". (No entity named "Mux2x1" was found).
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_D.vhd
+# Compile Entity "cache_D"
+# Compile Architecture "cache_D" of Entity "cache_D"
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd
+# Compile Entity "Cache_I"
+# Compile Architecture "Cache_I" of Entity "Cache_I"
+# Compile success 0 Errors 14 Warnings  Analysis time :  0.2 [s]
+# Library Manager: Library "biblioteca_de_componentes" contents cleared.
+# Library Manager: Library "biblioteca_de_componentes1" attached.
+# AMAP: Adding mapping library O.K.
+# Remove mapping biblioteca_de_componentes C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\biblioteca_de_componentesv4.5\biblioteca_de_componentes.lib
+# Warning: Library Manager: Local library "biblioteca_de_componentes" detached.
+# Remove mapping biblioteca_de_componentes1 C:\aldec\active-hdl-student-edition\vlib\biblioteca_de_componentesv4.5\biblioteca_de_componentes.lib
+# Warning: Library Manager: Local library "biblioteca_de_componentes1" detached.
+# Library Manager: Library "biblioteca_de_componentes" attached.
+# AMAP: Adding mapping library O.K.
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Fetch_stage.bde $dsn/src/Instruction_Decode_Stage.bde $dsn/src/Instruction_Execute_Stage.bde $dsn/src/Acesso_Memoria_Stage.bde $dsn/src/Controle_ALU.vhd $dsn/src/Esquema_Geral.bde $dsn/src/Write_Back_Stage.bde $dsn/src/cache_D.vhd $dsn/src/Controle.vhd $dsn/src/cache_I.vhd
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde'.
+# DRC: Warning: Instruction_Fetch_stage.bde - 0 error(s), 17 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde'.
+# DRC: Warning: Instruction_Decode_Stage.bde - 0 error(s), 14 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Decode_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde'.
+# DRC: Warning: Instruction_Execute_Stage.bde - 0 error(s), 25 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Execute_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Execute_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Acesso_Memoria_Stage.bde'.
+# DRC: Warning: Acesso_Memoria_Stage.bde - 0 error(s), 5 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Acesso_Memoria_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Acesso_Memoria_Stage.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Esquema_Geral.bde'.
+# DRC: Warning: Esquema_Geral.bde - 0 error(s), 7 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Esquema_Geral.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Esquema_Geral.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Write_Back_Stage.bde'.
+# DRC: Warning: Write_Back_Stage.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Write_Back_Stage.vhd from C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Write_Back_Stage.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Fetch_stage.vhd
+# Compile Entity "Instruction_Fetch_sstage"
+# Compile Architecture "Instruction_Fetch_sstage" of Entity "Instruction_Fetch_sstage"
+# File: .\..\compile\Instruction_Decode_Stage.vhd
+# Compile Entity "Instruction_Decode_Stage"
+# Compile Architecture "Instruction_Decode_Stage" of Entity "Instruction_Decode_Stage"
+# Warning: ELAB1_0026: Instruction_Decode_Stage.bde(Instruction_Decode_Stage.vhd) : (203, 0): There is no default binding for component "Controle". (No entity named "Controle" was found).
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# Warning: ELAB1_0026: Instruction_Execute_Stage.bde(Instruction_Execute_Stage.vhd) : (220, 0): There is no default binding for component "ALU_Control". (No entity named "ALU_Control" was found).
+# File: .\..\compile\Acesso_Memoria_Stage.vhd
+# Compile Entity "Acesso_Memoria"
+# Compile Architecture "Acesso_Memoria" of Entity "Acesso_Memoria"
+# Warning: ELAB1_0026: Acesso_Memoria_Stage.bde(Acesso_Memoria_Stage.vhd) : (127, 0): There is no default binding for component "cache_D". (No entity named "cache_D" was found).
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Controle_ALU.vhd
+# Compile Entity "ALU_Control"
+# Compile Architecture "ALU_Control" of Entity "ALU_Control"
+# File: .\..\compile\Esquema_Geral.vhd
+# Compile Entity "Esquema_Geral"
+# Compile Architecture "Esquema_Geral" of Entity "Esquema_Geral"
+# Warning: ELAB1_0026: Esquema_Geral.bde(Esquema_Geral.vhd) : (131, 0): There is no default binding for component "Write_Back_Stage". (No entity named "Write_Back_Stage" was found).
+# File: .\..\compile\Write_Back_Stage.vhd
+# Compile Entity "Write_Back_Stage"
+# Compile Architecture "Write_Back_Stage" of Entity "Write_Back_Stage"
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_D.vhd
+# Compile Entity "cache_D"
+# Compile Architecture "cache_D" of Entity "cache_D"
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd
+# Compile Entity "Cache_I"
+# Compile Architecture "Cache_I" of Entity "Cache_I"
+# Compile success 0 Errors 4 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Decode_Stage.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Decode_Stage.vhd
+# Compile Entity "Instruction_Decode_Stage"
+# Compile Architecture "Instruction_Decode_Stage" of Entity "Instruction_Decode_Stage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Instruction_Execute_Stage.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Instruction_Execute_Stage.vhd
+# Compile Entity "Instruction_Execute_Stage"
+# Compile Architecture "Instruction_Execute_Stage" of Entity "Instruction_Execute_Stage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Acesso_Memoria_Stage.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Acesso_Memoria_Stage.vhd
+# Compile Entity "Acesso_Memoria"
+# Compile Architecture "Acesso_Memoria" of Entity "Acesso_Memoria"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/Esquema_Geral.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Esquema_Geral.vhd
+# Compile Entity "Esquema_Geral"
+# Compile Architecture "Esquema_Geral" of Entity "Esquema_Geral"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/cache_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd
+# Compile Entity "Cache_I"
+# Compile Architecture "Cache_I" of Entity "Cache_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work biblioteca_de_componentes -2002  $dsn/src/cache_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline

@@ -1,10 +1,6 @@
-12885
+12866
 ~E 1 "./compile/absminmaxsomsub.vhd" 26 absminmaxsomsub
 ~A 1 "./compile/absminmaxsomsub.vhd" 42 absminmaxsomsub
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Acesso_Memoria_Stage.vhd" 27 Acesso_Memoria
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Acesso_Memoria_Stage.vhd" 38 Acesso_Memoria
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle_ALU.vhd" 28 ALU_Control
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle_ALU.vhd" 38 ALU_Control
 ~E 1 "./compile/And_NE.vhd" 25 And_NE
 ~A 1 "./compile/And_NE.vhd" 35 and_ne
 ~E 0 "" 0 ativar_registradores
@@ -12,14 +8,9 @@
 ~E 0 "" 0 BancadaDeTeste
 ~E 1 "./compile/buffertristate.vhd" 25 bufferTristate
 ~A 1 "./compile/buffertristate.vhd" 38 buffertristate
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 31 cache_D
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_D.vhd" 43 cache_D
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 31 Cache_I
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/cache_I.vhd" 40 Cache_I
+~E 0 "" 0 cache_I
 ~E 1 "./compile/contador.vhd" 26 contador
 ~A 1 "./compile/contador.vhd" 45 contador
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle.vhd" 28 Controle
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/src/Controle.vhd" 37 Controle
 ~E 1 "./compile/CSA.vhd" 25 CSA
 ~A 1 "./compile/CSA.vhd" 40 csa
 ~E 1 "./compile/Decodificador.vhd" 24 Decodificador
@@ -34,8 +25,6 @@
 ~A 1 "./compile/deslocador_combinatorio.vhd" 38 deslocador_combinatorio
 ~E 1 "./compile/DualRegFile.vhd" 25 DualRegFile
 ~A 1 "./compile/DualRegFile.vhd" 43 dualregfile
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Esquema_Geral.vhd" 27 Esquema_Geral
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Esquema_Geral.vhd" 33 Esquema_Geral
 ~E 1 "./compile/FA.vhd" 28 FA
 ~A 1 "./compile/FA.vhd" 38 fa
 ~E 0 "" 0 FD_MBcS
@@ -45,6 +34,7 @@
 ~E 0 "" 0 Fluxo_de_dados
 ~A 0 "" 0 Fluxo_de_dados
 ~E 0 "" 0 Fub1
+~A 0 "" 0 fub1
 ~E 1 "./compile/Fuse_and.vhd" 25 Fuse
 ~A 1 "./compile/Fuse_and.vhd" 34 fuse
 ~E 0 "" 0 Fuse_and
@@ -54,12 +44,10 @@
 ~E 1 "./compile/HA.vhd" 25 HA
 ~A 1 "./compile/HA.vhd" 37 ha
 ~E 0 "" 0 IF_ID
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd" 27 Instruction_Decode_Stage
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd" 39 Instruction_Decode_Stage
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Execute_Stage.vhd" 27 Instruction_Execute_Stage
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Execute_Stage.vhd" 35 Instruction_Execute_Stage
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 30 Instruction_Fetch_sstage
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 39 Instruction_Fetch_sstage
+~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_orgarq/Pipeline/compile/Instruction_Decode_Stage.vhd" 27 Instruction_Decode_Stage
+~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Decode_Stage.vhd" 40 Instruction_Decode_Stage
+~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 27 Instruction_Fetch_sstage
+~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 36 Instruction_Fetch_sstage
 ~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Instruction_Fetch_stage.vhd" 27 Instruction_Fetch_stage
 ~E 1 "c:/My_Designs/test/test/compile/Juntar.vhd" 24 Juntar
 ~A 1 "c:/My_Designs/test/test/compile/Juntar.vhd" 32 juntar
@@ -136,8 +124,6 @@
 ~A 1 "./compile/ULA.vhd" 46 ula
 ~E 1 "./compile/valor_absoluto.vhd" 26 valor_absoluto
 ~A 1 "./compile/valor_absoluto.vhd" 37 valor_absoluto
-~E 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Write_Back_Stage.vhd" 27 Write_Back_Stage
-~A 1 "C:/Users/Igor Ortega/Documents/GitHub/Pipeline_orgarq/Pipeline_MIPS/Pipeline_MIPS/compile/Write_Back_Stage.vhd" 36 Write_Back_Stage
 ~E 1 "./compile/xsign.vhd" 25 xsign
 ~A 1 "./compile/xsign.vhd" 36 xsign
 ~E 1 "./compile/xzero.vhd" 25 xzero

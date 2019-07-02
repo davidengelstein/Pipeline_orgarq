@@ -7,3 +7,5 @@ i<>.\src\Esquema_Geral.bde
 i<>.\src\Write_Back_Stage.bde
 i<>.\src\Fub1.vhd
 i<>.\src\cache_D.vhd
+i<>.\src\Controle.vhd
+i<>.\src\cache_I.vhd

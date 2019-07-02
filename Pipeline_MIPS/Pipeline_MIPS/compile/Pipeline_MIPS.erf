@@ -1,5 +1,5 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd" 
-MESSAGE "Compile Entity "cache_I"" 
-MESSAGE "Compile Architecture "cache_I" of Entity "cache_I"" 
+MESSAGE "File: .\..\compile\Instruction_Fetch_stage.vhd" 
+MESSAGE "Compile Entity "Instruction_Fetch_sstage"" 
+MESSAGE "Compile Architecture "Instruction_Fetch_sstage" of Entity "Instruction_Fetch_sstage"" 
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 

@@ -28,16 +28,16 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity cache_I is
+entity Cache_I is
 	 port(
 		 PC : in STD_LOGIC_VECTOR(31 downto 0);
 		 instrucao : out STD_LOGIC_VECTOR(31 downto 0)
 	     );
-end cache_I;
+end Cache_I;
 
 --}} End of automatically maintained section
 
-architecture cache_I of cache_I is
+architecture Cache_I of Cache_I is
 	signal prox_instrucao: std_logic_vector(31 downto 0);
 	signal seletor : std_logic_vector(7 downto 0);
 begin	 
@@ -62,5 +62,5 @@ begin
 			 	prox_instrucao <= "00010000000000000000000000000000";
 		 end case;
 	end process;
-end cache_I;
+end Cache_I;
 

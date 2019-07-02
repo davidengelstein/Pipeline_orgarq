@@ -25,16 +25,16 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity Fub1 is
+entity Controle is
 	 port(
 		 OpCode : in STD_LOGIC_VECTOR(5 downto 0);
 		 Controle : out STD_LOGIC_VECTOR(9 downto 0)
 	     );
-end Fub1;
+end Controle;
 
 --}} End of automatically maintained section
 
-architecture Controle of Fub1 is
+architecture Controle of Controle is
 begin
 
 	Controle <= "1100000010" when OpCode = "000000" else    --tipo R

@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Fetch_stage.vhd
--- Generated   : Sun Jun 30 21:56:05 2019
+-- Generated   : Tue Jul  2 01:37:42 2019
 -- From        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Fetch_stage.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -23,6 +23,9 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
 use IEEE.std_logic_signed.all;
 use IEEE.std_logic_unsigned.all;
+
+-- other libraries declarations
+library PIPELINE_MIPS;
 
 entity Instruction_Fetch_sstage is
   port(
@@ -46,25 +49,6 @@ component Mux2x1
        I1 : in STD_LOGIC_VECTOR(NB-1 downto 0);
        Sel : in STD_LOGIC;
        O : out STD_LOGIC_VECTOR(NB-1 downto 0)
-  );
-end component;
-component ram
-  generic(
-       BP : integer := 16;
-       BE : integer := 8;
-       Tread : time := 5 ns;
-       Twrite : time := 5 ns;
-       Tsetup : time := 2 ns;
-       NA : string := "mram.txt";
-       Tz : time := 2 ns
-  );
-  port (
-       Clock : in STD_LOGIC;
-       enable : in STD_LOGIC;
-       ender : in STD_LOGIC_VECTOR(BE - 1 downto 0);
-       rw : in STD_LOGIC;
-       pronto : out STD_LOGIC;
-       dado : inout STD_LOGIC_VECTOR(BP - 1 downto 0)
   );
 end component;
 component Reg_ClkEnable
@@ -99,12 +83,20 @@ component somador
        C : out STD_LOGIC_VECTOR(NumeroBits - 1 downto 0)
   );
 end component;
+component Cache_I
+  port (
+       PC : in STD_LOGIC_VECTOR(31 downto 0);
+       instrucao : out STD_LOGIC_VECTOR(31 downto 0)
+  );
+end component;
 
 ----     Constants     -----
 constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
+constant VCC_CONSTANT   : STD_LOGIC := '1';
 
 ---- Signal declarations used on the diagram ----
 
+signal VCC : STD_LOGIC;
 signal IF_ID_In : STD_LOGIC_VECTOR(63 downto 0);
 signal INST : STD_LOGIC_VECTOR(31 downto 0);
 signal PC : STD_LOGIC_VECTOR(31 downto 0);
@@ -124,13 +116,10 @@ value_quatro(31 downto 0)<="00000000000000000000000000000100";
 
 ----  Component instantiations  ----
 
-U10 : ram
+U2 : Cache_I
   port map(
-       Clock => Clock,
-       dado => INST(31 downto 0),
-       enable => Dangling_Input_Signal,
-       ender => PC(31 downto 0),
-       rw => Dangling_Input_Signal
+       PC => PC,
+       instrucao => INST
   );
 
 U6 : Reg_ClkEnable
@@ -139,7 +128,7 @@ U6 : Reg_ClkEnable
   )
   port map(
        C => Clock,
-       CE => Dangling_Input_Signal,
+       CE => VCC,
        D => PC_in(31 downto 0),
        Q => PC(31 downto 0),
        R => Dangling_Input_Signal,
@@ -175,13 +164,17 @@ U9 : Reg_ClkEnable
   )
   port map(
        C => Clock,
-       CE => Dangling_Input_Signal,
+       CE => VCC,
        D => IF_ID_In(63 downto 0),
        Q => OUT_IF(63 downto 0),
        R => Dangling_Input_Signal,
        S => Dangling_Input_Signal
   );
 
+
+---- Power , ground assignment ----
+
+VCC <= VCC_CONSTANT;
 
 ---- Dangling input signal assignment ----
 

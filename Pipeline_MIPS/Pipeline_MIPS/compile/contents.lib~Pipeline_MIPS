@@ -1,7 +1,19 @@
-45
+67
+~E 1 "./../src/cache_I.vhd" 31 Cache_I
+~A 1 "./../src/cache_I.vhd" 40 Cache_I
+~E 1 "./../src/Controle.vhd" 28 Controle
+~A 1 "./../src/Controle.vhd" 37 Controle
+~E 0 "" 0 DualRegFile
+~E 1 "./../src/Controle.vhd" 28 Fub1
+~A 1 "./../src/Controle.vhd" 37 Controle
+~E 1 "./../src/Controle_ALU.vhd" 28 Fub2
+~A 1 "./../src/Controle_ALU.vhd" 38 Fub2
 ~E 1 "./../compile/Instruction_Decode_Stage.vhd" 27 Instruction_Decode_Stage
-~A 1 "./../compile/Instruction_Decode_Stage.vhd" 40 Instruction_Decode_Stage
+~A 1 "./../compile/Instruction_Decode_Stage.vhd" 39 Instruction_Decode_Stage
 ~E 1 "./../compile/Instruction_Fetch_stage.vhd" 27 Instruction_Fetch_sstage
 ~A 1 "./../compile/Instruction_Fetch_stage.vhd" 36 Instruction_Fetch_sstage
 ~E 0 "" 0 Instruction_Fetch_stage
-~A 0 "" 0 Instruction_Fetch_stage
+~A 0 "" 0 instruction_fetch_stage
+~E 0 "" 0 Mux2x1
+~E 0 "" 0 Reg_ClkEnable
+~E 0 "" 0 xsign

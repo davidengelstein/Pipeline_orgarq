@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\compile\Instruction_Decode_Stage.vhd
--- Generated   : Sun Jun 30 21:56:07 2019
+-- Generated   : Tue Jul  2 01:31:31 2019
 -- From        : C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\Instruction_Decode_Stage.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -27,13 +27,12 @@ use IEEE.std_logic_unsigned.all;
 entity Instruction_Decode_Stage is
   port(
        CLK : in STD_LOGIC;
-       WE : in STD_LOGIC;
+       RegWrite : in STD_LOGIC;
        OutIF : in STD_LOGIC_VECTOR(63 downto 0);
        regDst : in STD_LOGIC_VECTOR(4 downto 0);
        regDstData : in STD_LOGIC_VECTOR(31 downto 0);
        Ctrl_Arit : out STD_LOGIC_VECTOR(10 downto 0);
-       OpCode : out STD_LOGIC_VECTOR(5 downto 0);
-       OutID : out STD_LOGIC_VECTOR(163 downto 0)
+       OutID : out STD_LOGIC_VECTOR(173 downto 0)
   );
 end Instruction_Decode_Stage;
 
@@ -41,6 +40,12 @@ architecture Instruction_Decode_Stage of Instruction_Decode_Stage is
 
 ---- Component declarations -----
 
+component Controle
+  port (
+       OpCode : in STD_LOGIC_VECTOR(5 downto 0);
+       Controle : out STD_LOGIC_VECTOR(9 downto 0)
+  );
+end component;
 component dualregfile
   generic(
        NBend : integer := 4;
@@ -100,15 +105,19 @@ end component;
 
 ----     Constants     -----
 constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
+constant VCC_CONSTANT   : STD_LOGIC := '1';
 
 ---- Signal declarations used on the diagram ----
 
+signal VCC : STD_LOGIC;
 signal BUS370 : STD_LOGIC_VECTOR(7 downto 0);
+signal control : STD_LOGIC_VECTOR(9 downto 0);
 signal endJump : STD_LOGIC_VECTOR(25 downto 0);
 signal ext_immed_off : STD_LOGIC_VECTOR(31 downto 0);
-signal ID_EX_In : STD_LOGIC_VECTOR(163 downto 0);
+signal ID_EX_In : STD_LOGIC_VECTOR(173 downto 0);
 signal immed_offset : STD_LOGIC_VECTOR(15 downto 0);
 signal Inst : STD_LOGIC_VECTOR(31 downto 0);
+signal OpCode : STD_LOGIC_VECTOR(5 downto 0);
 signal PC_mais_quatro : STD_LOGIC_VECTOR(31 downto 0);
 signal rd : STD_LOGIC_VECTOR(4 downto 0);
 signal Rs : STD_LOGIC_VECTOR(4 downto 0);
@@ -138,6 +147,7 @@ ID_EX_In(73 downto 42)<=RtData(31 downto 0);
 ID_EX_In(105 downto 74)<=RsData(31 downto 0);
 ID_EX_In(131 downto 106)<=endJump(25 downto 0);
 ID_EX_In(163 downto 132)<=PC_mais_quatro(31 downto 0);
+ID_EX_In(173 downto 164) <= control(9 downto 0) ; 
 
 ----  Component instantiations  ----
 
@@ -153,7 +163,7 @@ Banco_De_Registradores : dualregfile
        dadooutb => RsData(31 downto 0),
        enda => BUS370(7 downto 0),
        endb => Rs(4 downto 0),
-       we => WE
+       we => RegWrite
   );
 
 Extende_sinal : xsign
@@ -168,13 +178,13 @@ Extende_sinal : xsign
 
 ID_EX : Reg_ClkEnable
   generic map(
-       NumeroBits => 164
+       NumeroBits => 174
   )
   port map(
        C => CLK,
-       CE => Dangling_Input_Signal,
-       D => ID_EX_In(163 downto 0),
-       Q => OutID(92 downto 0),
+       CE => VCC,
+       D => ID_EX_In(173 downto 0),
+       Q => OutID(173 downto 0),
        R => Dangling_Input_Signal,
        S => Dangling_Input_Signal
   );
@@ -187,9 +197,19 @@ Read_Write_Mux : Mux2x1
        I0 => Rt(4 downto 0),
        I1 => regDst(4 downto 0),
        O => BUS370(7 downto 0),
-       Sel => WE
+       Sel => RegWrite
   );
 
+U1 : Controle
+  port map(
+       Controle => control,
+       OpCode => OpCode
+  );
+
+
+---- Power , ground assignment ----
+
+VCC <= VCC_CONSTANT;
 
 ---- Dangling input signal assignment ----
 

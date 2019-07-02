@@ -5,5 +5,6 @@
 .\src\Controle_ALU.vhd
 .\src\Esquema_Geral.bde
 .\src\Write_Back_Stage.bde
-.\src\cache_I.vhd
 .\src\cache_D.vhd
+.\src\Controle.vhd
+.\src\cache_I.vhd

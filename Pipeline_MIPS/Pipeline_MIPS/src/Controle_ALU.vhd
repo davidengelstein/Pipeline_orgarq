@@ -25,17 +25,17 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity Fub2 is
+entity ALU_Control is
 	 port(
 		 ALUOp : in STD_LOGIC_VECTOR(1 downto 0);
 		 Controle_ALU : out STD_LOGIC_VECTOR(2 downto 0);
 		 funct : in STD_LOGIC_VECTOR(5 downto 0)
 	     );
-end Fub2;
+end ALU_Control;
 
 --}} End of automatically maintained section
 
-architecture Fub2 of Fub2 is
+architecture ALU_Control of ALU_Control is
 begin
 	Controle_ALU <= "010" when ALUOp = "00" else
 					"110" when ALUOp = "X1" else
@@ -46,7 +46,7 @@ begin
 					"111" when ALUOp = "1X" and funct = "XX1010";
 	 -- enter your statements here --
 
-end Fub2;
+end ALU_Control;
 
 
 

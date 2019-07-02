@@ -1,3 +1,2 @@
-".\..\compile\Instruction_Fetch_stage.vhd" VHDL Pipeline_MIPS 2 0 0 -02
-".\..\compile\Instruction_Decode_Stage.vhd" VHDL Pipeline_MIPS 2 0 0 -02
+"C:\Users\Igor Ortega\Documents\GitHub\Pipeline_orgarq\Pipeline_MIPS\Pipeline_MIPS\src\cache_I.vhd" VHDL pipeline_mips 1 0 0 -02
 . . 0 0 0
