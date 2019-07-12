@@ -27,7 +27,12 @@ use ieee.numeric_std.all;
 
 
 
-entity Registrador is  
+entity Registrador is
+	generic(
+       NumeroBits : INTEGER := 32;
+       Tprop : time := 5 ns;
+       Tsetup : time := 2 ns
+  );
 	port(
 		D : in STD_LOGIC_VECTOR(31 downto 0);
 		CE : in STD_LOGIC;
@@ -48,9 +53,9 @@ begin
 	-- "Update sensitivity list automatically" option status
 	begin
 		if R='1' then	-- 	Reset assíncrono
-			qi(31 downto 0) <= (others => '0');-- Inicialização com zero	
+			qi(NumeroBits - 1 downto 0) <= (others => '0');-- Inicialização com zero	
 		elsif S = '1' then -- Set assíncrono
-			qi(31 downto 0) <= (others => '1'); -- Inicialização com um
+			qi(NumeroBits - 1 downto 0) <= (others => '1'); -- Inicialização com um
 		elsif (C'event and C='1') then  -- Clock na borda de subida
 			if CE = '1' then
 				qi <= D;
