@@ -27,26 +27,26 @@ use ieee.numeric_std.all;
 
 
 
-entity Registrador is
+entity Reg is
 	generic(
        NumeroBits : INTEGER := 32;
        Tprop : time := 5 ns;
        Tsetup : time := 2 ns
   );
 	port(
-		D : in STD_LOGIC_VECTOR(31 downto 0);
+		D : in STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
 		CE : in STD_LOGIC;
 		C : in STD_LOGIC;
 		R : in STD_LOGIC;
 		S : in STD_LOGIC;
-		Q : out STD_LOGIC_VECTOR(31 downto 0)
+		Q : out STD_LOGIC_VECTOR(NumeroBits - 1 downto 0)
 		  );
-end Registrador;
+end Reg;
 
 --}} End of automatically maintained section
 
-architecture Registrador of Registrador is	
-signal qi : std_logic_vector (31 downto 0) := (others => '0');
+architecture Reg of Reg is	
+signal qi : std_logic_vector (NumeroBits - 1 downto 0) := (others => '0');
 begin
 	process (C, S, R, CE)
 	-- Section above this comment may be overwritten according to
@@ -66,4 +66,4 @@ begin
 		Q <= qi;
 	end process;
 
-end Registrador;
+end Reg;
