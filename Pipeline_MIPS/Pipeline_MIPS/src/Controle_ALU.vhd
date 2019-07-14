@@ -37,13 +37,13 @@ end ALU_Control;
 
 architecture ALU_Control of ALU_Control is
 begin
-	Controle_ALU <= "010" when ALUOp = "00" else
-					"110" when ALUOp = "X1" else
-					"010" when ALUOp = "1X" and funct = "XX0000" else
-					"110" when ALUOp = "1X" and funct = "XX0010" else
-					"000" when ALUOp = "1X" and funct = "XX0100" else
-					"001" when ALUOp = "1X" and funct = "XX0101" else
-					"111" when ALUOp = "1X" and funct = "XX1010";
+	Controle_ALU <= "001" when ALUOp = "00" else   -- load e store (add)
+					"011" when ALUOp = "10" else   -- beq (sub)
+					"001" when ALUOp = "01" and funct = "100000" else -- add
+					"011" when ALUOp = "01" and funct = "100010" else -- sub
+					"100" when ALUOp = "01" and funct = "100100" else -- and
+					"101" when ALUOp = "01" and funct = "100101" else -- or
+					"000";
 	 -- enter your statements here --
 
 end ALU_Control;

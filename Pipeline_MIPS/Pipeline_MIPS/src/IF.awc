@@ -1,0 +1,49 @@
+<config>
+    <version>
+        2.1
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="LOCAL___cd862b5d50718d190100">IF.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+        <signal>/Instruction_Fetch_sstage/Clock</signal>
+        <signal>/Instruction_Fetch_sstage/PCSrc</signal>
+        <signal>/Instruction_Fetch_sstage/OUT_MEM</signal>
+        <signal>/Instruction_Fetch_sstage/OUT_IF</signal>
+        <signal>/Instruction_Fetch_sstage/IF_ID_In</signal>
+        <signal>/Instruction_Fetch_sstage/INST</signal>
+        <signal>/Instruction_Fetch_sstage/PC</signal>
+        <signal>/Instruction_Fetch_sstage/PC_in</signal>
+        <signal>/Instruction_Fetch_sstage/PC_mais_quatro</signal>
+        <signal>/Instruction_Fetch_sstage/value_quatro</signal>
+        </signallist>
+    </signallists>
+    <prefbases>
+        <prefbase id="0" >
+            <pref name="End Time" value="1025121" />
+            <pref name="Start Time" value="0" />
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="200000" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="-1" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+</config>

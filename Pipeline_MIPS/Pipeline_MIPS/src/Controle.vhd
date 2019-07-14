@@ -37,11 +37,11 @@ end Controle;
 architecture Controle of Controle is
 begin
 
-	Controle <= "1100000010" when OpCode = "000000" else    --tipo R
-				"0001001011" when OpCode = "100011" else    --load (lw)
-				"X00100010X" when OpCode = "101011"	else	--store (sw)
-				"X01010000X" when OpCode = "000100" else    -- beq
-				"X01001000X" when OpCode = "000010" else	-- jump	 
+	Controle <= "0100000011" when OpCode = "000000" else    --tipo R
+				"1101001000" when OpCode = "100011" else    --load (lw)
+				"0010001000" when OpCode = "101011"	else	--store (sw)
+				"0000010100" when OpCode = "000100" else    -- beq
+				"0000100100" when OpCode = "000010" else	-- jump	 
 				"0000000000";
 
 end Controle;
