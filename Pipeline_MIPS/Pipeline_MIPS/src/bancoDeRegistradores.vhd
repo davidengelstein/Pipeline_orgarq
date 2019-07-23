@@ -28,7 +28,7 @@ begin
 	process (clk)
 
 	begin
-		 if (clk'event and clk = '1') then
+		 if (clk'event and clk = '0') then
 	        if (we = '1') then
 	           ram(to_integer(unsigned(endA))) <= dadoInA;
 	        end if;
