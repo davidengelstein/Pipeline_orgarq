@@ -2,13 +2,13 @@ SCHM0106
 
 HEADER
 {
- FREEID 55
+ FREEID 74
  VARIABLES
  {
   #ARCHITECTURE="decode_2x4"
   #BLOCKTABLE_FILE="#table.bde"
   #BLOCKTABLE_INCLUDED="1"
-  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"in0\"><left=\"1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"in0\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #DEFAULT_RANGE1="<range<index=\"0\"><name=\"sai\"><left=\"3\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #ENTITY="decode_2x4"
   #LANGUAGE="VHDL"
@@ -38,7 +38,7 @@ PAGE ""
     #COMPONENT="BusInput"
     #CUSTOM_NAME=""
     #LIBRARY="#terminals"
-    #REFERENCE="In0(1:0)"
+    #REFERENCE="In0(4:0)"
     #SYMBOL="BusInput"
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
     #VHDL_TYPE="STD_LOGIC_VECTOR"
@@ -96,10 +96,10 @@ PAGE ""
    LABEL "SignalAssignments_1"
    TEXT 
 "With In0 select\n"+
-"\t\tsai <=\t\"0001\" \t\twhen \"00\" ,\n"+
-"\t\t\t\t\t\t \"0010\" \t\twhen \"01\" ,\n"+
-"\t\t\t\t\t\t \"0100\" \t\twhen \"10\" ,\n"+
-"\t\t\t\t\t\t \"1000\" \t\twhen \"11\" ,\n"+
+"\t\tsai <=\t\"0001\" \t\twhen \"00000\" ,\n"+
+"\t\t\t\t\t\t \"0010\" \t\twhen \"00001\" ,\n"+
+"\t\t\t\t\t\t \"0100\" \t\twhen \"00010\" ,\n"+
+"\t\t\t\t\t\t \"1000\" \t\twhen \"00011\" ,\n"+
 "\t\t\t\t\t\t \"XXXX\"    when others;"
    RECT (800,560,1420,940)
    OUTLINE 5,1, (0,0,0)
@@ -166,7 +166,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  38, 0, 0
+  TEXT  57, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -177,7 +177,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  39, 0, 0
+  TEXT  58, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -188,7 +188,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  40, 0, 0
+  TEXT  59, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -198,7 +198,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  41, 0, 0
+  TEXT  60, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -210,7 +210,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  42, 0, 0
+  TEXT  61, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -223,7 +223,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  43, 0, 0
+  TEXT  62, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -233,7 +233,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  44, 0, 0
+  TEXT  63, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -245,7 +245,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  45, 0, 0
+  TEXT  64, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -255,7 +255,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  46, 0, 0
+  TEXT  65, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -266,7 +266,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  47, 0, 0
+  GROUP  66, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -278,7 +278,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  48, 0, 0
+  GROUP  67, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -290,7 +290,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  49, 0, 0
+  GROUP  68, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -302,7 +302,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  50, 0, 0
+  GROUP  69, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -314,7 +314,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  51, 0, 0
+  GROUP  70, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -326,7 +326,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  52, 0, 0
+  GROUP  71, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -337,7 +337,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  53, 0, 0
+  GROUP  72, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -348,7 +348,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  54, 0, 0
+  BMPPICT  73, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

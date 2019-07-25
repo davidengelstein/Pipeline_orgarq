@@ -2,7 +2,7 @@ SCHM0106
 
 HEADER
 {
- FREEID 4307
+ FREEID 4324
  VARIABLES
  {
   #ARCHITECTURE="Instruction_Execute_Stage"
@@ -612,7 +612,6 @@ HEADER
    VARIABLES
    {
     #CUSTOM_NAME=""
-    #DESCRIPTION=""
     #GENERIC0="NumeroBits : INTEGER := 32"
     #GENERIC1="Tprop : TIME := 5 ns"
     #GENERIC2="Tsetup : TIME := 2 ns"
@@ -620,9 +619,9 @@ HEADER
 "library IEEE;\n"+
 "use IEEE.std_logic_1164.all;"
     #LANGUAGE="VHDL"
-    #MODIFIED="1562902193"
+    #MODIFIED="1564081103"
     #NAME="Reg"
-    #PRAGMED_GENERICS="NumeroBits;"
+    #PRAGMED_GENERICS="NumeroBits"
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="76e76154-55e3-483e-9c06-1181994c1174"
    }
   }
@@ -667,22 +666,6 @@ HEADER
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
-    }
-    TEXT  9, 0, 0
-    {
-     TEXT "$#NAME"
-     RECT (25,148,41,172)
-     ALIGN 4
-     MARGINS (1,1)
-     PARENT 8
-    }
-    TEXT  11, 0, 0
-    {
-     TEXT "$#NAME"
-     RECT (25,188,40,212)
-     ALIGN 4
-     MARGINS (1,1)
-     PARENT 10
     }
     TEXT  13, 0, 0
     {
@@ -733,38 +716,6 @@ HEADER
       #DIRECTION="IN"
       #LENGTH="20"
       #NAME="C"
-      #SIDE="left"
-      #VHDL_TYPE="STD_LOGIC"
-     }
-     LINE  1, 0, 0
-     {
-      POINTS ( (0,0), (20,0) )
-     }
-    }
-    PIN  8, 0, 0
-    {
-     COORD (0,160)
-     VARIABLES
-     {
-      #DIRECTION="IN"
-      #LENGTH="20"
-      #NAME="R"
-      #SIDE="left"
-      #VHDL_TYPE="STD_LOGIC"
-     }
-     LINE  1, 0, 0
-     {
-      POINTS ( (0,0), (20,0) )
-     }
-    }
-    PIN  10, 0, 0
-    {
-     COORD (0,200)
-     VARIABLES
-     {
-      #DIRECTION="IN"
-      #LENGTH="20"
-      #NAME="S"
       #SIDE="left"
       #VHDL_TYPE="STD_LOGIC"
      }
@@ -3493,7 +3444,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  4290, 0, 0
+  TEXT  4307, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -3504,7 +3455,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  4291, 0, 0
+  TEXT  4308, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -3515,7 +3466,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  4292, 0, 0
+  TEXT  4309, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -3525,7 +3476,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  4293, 0, 0
+  TEXT  4310, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -3537,7 +3488,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  4294, 0, 0
+  TEXT  4311, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -3550,7 +3501,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  4295, 0, 0
+  TEXT  4312, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -3560,7 +3511,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  4296, 0, 0
+  TEXT  4313, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -3572,7 +3523,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  4297, 0, 0
+  TEXT  4314, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -3582,7 +3533,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  4298, 0, 0
+  TEXT  4315, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -3593,7 +3544,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  4299, 0, 0
+  GROUP  4316, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -3605,7 +3556,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  4300, 0, 0
+  GROUP  4317, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -3617,7 +3568,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  4301, 0, 0
+  GROUP  4318, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -3629,7 +3580,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  4302, 0, 0
+  GROUP  4319, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -3641,7 +3592,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  4303, 0, 0
+  GROUP  4320, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -3653,7 +3604,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  4304, 0, 0
+  GROUP  4321, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -3664,7 +3615,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  4305, 0, 0
+  GROUP  4322, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -3675,7 +3626,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  4306, 0, 0
+  BMPPICT  4323, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

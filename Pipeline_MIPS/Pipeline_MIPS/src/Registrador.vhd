@@ -37,8 +37,6 @@ entity Reg is
 		D : in STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
 		CE : in STD_LOGIC;
 		C : in STD_LOGIC;
-		R : in STD_LOGIC;
-		S : in STD_LOGIC;
 		Q : out STD_LOGIC_VECTOR(NumeroBits - 1 downto 0)
 		  );
 end Reg;
@@ -48,15 +46,11 @@ end Reg;
 architecture Reg of Reg is	
 signal qi : std_logic_vector (NumeroBits - 1 downto 0) := (others => '0');
 begin
-	process (C, S, R, CE)
+	process (C)
 	-- Section above this comment may be overwritten according to
 	-- "Update sensitivity list automatically" option status
 	begin
-		if R='1' then	-- 	Reset assíncrono
-			qi(NumeroBits - 1 downto 0) <= (others => '0');-- Inicialização com zero	
-		elsif S = '1' then -- Set assíncrono
-			qi(NumeroBits - 1 downto 0) <= (others => '1'); -- Inicialização com um
-		elsif (C'event and C='1') then  -- Clock na borda de subida
+		if rising_edge(C) then  -- Clock na borda de subida
 			if CE = '1' then
 				qi <= D;
 			else

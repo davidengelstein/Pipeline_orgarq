@@ -2,12 +2,14 @@ SCHM0106
 
 HEADER
 {
- FREEID 18
+ FREEID 55
  VARIABLES
  {
   #ARCHITECTURE="decode_2x4"
   #BLOCKTABLE_FILE="#table.bde"
   #BLOCKTABLE_INCLUDED="1"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"in0\"><left=\"1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"sai\"><left=\"3\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #ENTITY="decode_2x4"
   #LANGUAGE="VHDL"
   AUTHOR="Igor Ortega"
@@ -29,6 +31,116 @@ PAGE ""
  
  BODY
  {
+  INSTANCE  18, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="In0(1:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (660,760)
+   VERTEXES ( (2,32) )
+  }
+  TEXT  20, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (479,743,580,778)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 18
+  }
+  INSTANCE  21, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="Sai(3:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1500,760)
+   VERTEXES ( (2,34) )
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1580,743,1684,778)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 21
+  }
+  VHDLDESIGNUNITHDR  24, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+   RECT (380,260,820,400)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  25, 0, 0
+  {
+   LABEL "SignalAssignments_1"
+   TEXT 
+"With In0 select\n"+
+"\t\tsai <=\t\"0001\" \t\twhen \"00\" ,\n"+
+"\t\t\t\t\t\t \"0010\" \t\twhen \"01\" ,\n"+
+"\t\t\t\t\t\t \"0100\" \t\twhen \"10\" ,\n"+
+"\t\t\t\t\t\t \"1000\" \t\twhen \"11\" ,\n"+
+"\t\t\t\t\t\t \"XXXX\"    when others;"
+   RECT (800,560,1420,940)
+   OUTLINE 5,1, (0,0,0)
+   FILL (0,(255,255,156),0)
+   MARGINS (20,20)
+   FONT (12,0,0,400,0,0,0,"Arial")
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  33, 35 )
+  }
+  NET BUS  28, 0, 0
+  NET BUS  30, 0, 0
+  VTX  32, 0, 0
+  {
+   COORD (660,760)
+  }
+  VTX  33, 0, 0
+  {
+   COORD (800,760)
+  }
+  VTX  34, 0, 0
+  {
+   COORD (1500,760)
+  }
+  VTX  35, 0, 0
+  {
+   COORD (1420,760)
+  }
+  BUS  36, 0, 0
+  {
+   NET 28
+   VTX 32, 33
+  }
+  BUS  37, 0, 0
+  {
+   NET 30
+   VTX 34, 35
+  }
  }
  
 }
@@ -54,7 +166,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  1, 0, 0
+  TEXT  38, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -65,7 +177,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  2, 0, 0
+  TEXT  39, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -76,7 +188,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  3, 0, 0
+  TEXT  40, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -86,7 +198,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  4, 0, 0
+  TEXT  41, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -98,7 +210,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  5, 0, 0
+  TEXT  42, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -111,7 +223,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  6, 0, 0
+  TEXT  43, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -121,7 +233,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  7, 0, 0
+  TEXT  44, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -133,7 +245,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  8, 0, 0
+  TEXT  45, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -143,7 +255,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  9, 0, 0
+  TEXT  46, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -154,7 +266,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  10, 0, 0
+  GROUP  47, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -166,7 +278,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  11, 0, 0
+  GROUP  48, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -178,7 +290,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  12, 0, 0
+  GROUP  49, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -190,7 +302,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  13, 0, 0
+  GROUP  50, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -202,7 +314,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  14, 0, 0
+  GROUP  51, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -214,7 +326,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  15, 0, 0
+  GROUP  52, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -225,7 +337,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  16, 0, 0
+  GROUP  53, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -236,7 +348,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  17, 0, 0
+  BMPPICT  54, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

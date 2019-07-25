@@ -2,80 +2,19 @@ SCHM0106
 
 HEADER
 {
- FREEID 117
+ FREEID 18
  VARIABLES
  {
-  #ARCHITECTURE="top_level"
+  #ARCHITECTURE="\\IF\\"
   #BLOCKTABLE_FILE="#table.bde"
   #BLOCKTABLE_INCLUDED="1"
-  #ENTITY="top_level"
+  #ENTITY="\\IF\\"
   #LANGUAGE="VHDL"
   AUTHOR="Igor Ortega"
   COMPANY="POLI USP"
-  CREATIONDATE="02/07/2019"
+  CREATIONDATE="22/07/2019"
   PAGECOUNT="2"
   TITLE="No Title"
- }
- SYMBOL "#default" "Esquema_Geral" "Esquema_Geral"
- {
-  HEADER
-  {
-   VARIABLES
-   {
-    #CUSTOM_NAME=""
-    #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-    #LANGUAGE="VHDL"
-    #MODIFIED="1562043152"
-    #NAME="Esquema_Geral"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="544ba04c-5f98-416f-a1fb-93ff0918d152"
-   }
-  }
-  PAGE "" 
-  {
-   PAGEHEADER
-   {
-    RECT (0,0,340,240)
-    FREEID 4
-   }
-   
-   BODY
-   {
-    RECT  1, -1, 0
-    {
-     VARIABLES
-     {
-      #OUTLINE_FILLING="1"
-     }
-     AREA (20,0,340,240)
-    }
-    TEXT  3, 0, 0
-    {
-     TEXT "$#NAME"
-     RECT (25,188,75,212)
-     ALIGN 4
-     MARGINS (1,1)
-     PARENT 2
-    }
-    PIN  2, 0, 0
-    {
-     COORD (0,200)
-     VARIABLES
-     {
-      #DIRECTION="IN"
-      #LENGTH="20"
-      #NAME="Clock"
-      #SIDE="left"
-      #VHDL_TYPE="STD_LOGIC"
-     }
-     LINE  1, 0, 0
-     {
-      POINTS ( (0,0), (20,0) )
-     }
-    }
-   }
-  }
  }
 }
 
@@ -90,71 +29,6 @@ PAGE ""
  
  BODY
  {
-  INSTANCE  18, 0, 0
-  {
-   VARIABLES
-   {
-    #COMPONENT="Esquema_Geral"
-    #CUSTOM_NAME=""
-    #LIBRARY="#default"
-    #REFERENCE="U1"
-    #SYMBOL="Esquema_Geral"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="544ba04c-5f98-416f-a1fb-93ff0918d152"
-   }
-   COORD (1000,380)
-   VERTEXES ( (2,24) )
-  }
-  TEXT  19, 0, 0
-  {
-   TEXT "$#REFERENCE"
-   RECT (1000,344,1039,379)
-   ALIGN 8
-   MARGINS (1,1)
-   PARENT 18
-  }
-  TEXT  20, 0, 0
-  {
-   TEXT "$#COMPONENT"
-   RECT (1000,620,1213,655)
-   MARGINS (1,1)
-   PARENT 18
-  }
-  INSTANCE  21, 0, 0
-  {
-   VARIABLES
-   {
-    #COMPONENT="Input"
-    #CUSTOM_NAME=""
-    #LIBRARY="#terminals"
-    #REFERENCE="CLK"
-    #SYMBOL="Input"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
-   }
-   COORD (760,580)
-   VERTEXES ( (2,23) )
-  }
-  TEXT  22, 0, 0
-  {
-   TEXT "$#REFERENCE"
-   RECT (651,563,709,598)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 21
-  }
-  VTX  23, 0, 0
-  {
-   COORD (760,580)
-  }
-  VTX  24, 0, 0
-  {
-   COORD (1000,580)
-  }
-  NET WIRE  25, 0, 0
-  WIRE  26, 0, 0
-  {
-   NET 25
-   VTX 23, 24
-  }
  }
  
 }
@@ -180,7 +54,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  100, 0, 0
+  TEXT  1, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -191,7 +65,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  101, 0, 0
+  TEXT  2, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -202,7 +76,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  102, 0, 0
+  TEXT  3, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -212,7 +86,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  103, 0, 0
+  TEXT  4, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -224,7 +98,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  104, 0, 0
+  TEXT  5, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -237,7 +111,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  105, 0, 0
+  TEXT  6, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -247,7 +121,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  106, 0, 0
+  TEXT  7, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -259,7 +133,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  107, 0, 0
+  TEXT  8, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -269,7 +143,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  108, 0, 0
+  TEXT  9, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -280,7 +154,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  109, 0, 0
+  GROUP  10, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -292,7 +166,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  110, 0, 0
+  GROUP  11, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -304,7 +178,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  111, 0, 0
+  GROUP  12, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -316,7 +190,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  112, 0, 0
+  GROUP  13, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -328,7 +202,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  113, 0, 0
+  GROUP  14, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -340,7 +214,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  114, 0, 0
+  GROUP  15, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -351,7 +225,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  115, 0, 0
+  GROUP  16, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -362,7 +236,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  116, 0, 0
+  BMPPICT  17, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)
