@@ -21,27 +21,44 @@ architecture banco_regs of banco_regs is
   signal registers : registerFile := ((others=> (others=>'0')));
   signal outDataA: std_logic_vector(31 downto 0) := (others=>'0');
   signal outDataB: std_logic_vector(31 downto 0) := (others=>'0');
+  signal inputData: std_logic_vector(31 downto 0) := (others=>'0');
+  signal regSel: std_logic_vector(4 downto 0) := (others=>'0');
+  signal writeEn: std_logic := '0';
 begin
  
-  outA <= outDataA;
-  outB <= outDataB;
+  outA <= outDataA after 5ns;
+  outB <= outDataB after 5ns;
+  inputData <= input after 10ns;
+  writeEn <= writeEnable after 10ns;
+  regSel <=	writeRegSel after 10ns;
 	
   process (clk)
-  begin
+  begin	
+	if writeEn = '1' then 
+		-- outA
+        if regASel = regSel then  -- Bypass for read A
+        	outDataA <= inputData;
+		else
+			outDataA <= registers(to_integer(unsigned(regASel)));
+        end if;
+		-- outB
+        if regBSel = regSel then  -- Bypass for read B
+         	outDataB <= inputData;
+		else
+			outDataB <= registers(to_integer(unsigned(regBSel)));
+        end if;	
+	-- se writeEnable não for 1, não olha o input
+	else 
+		outDataA <= registers(to_integer(unsigned(regASel)));
+    	outDataB <= registers(to_integer(unsigned(regBSel)));
+	end if;
+	
     if rising_edge(clk) then
-	  -- Read A and B before bypass
-      outDataA <= registers(to_integer(unsigned(regASel)));
-      outDataB <= registers(to_integer(unsigned(regBSel)));
-      -- Write and bypass
+      -- Write
       if writeEnable = '1' then
-        registers(to_integer(unsigned(writeRegSel))) <= input;  -- Write
-        if regASel = writeRegSel then  -- Bypass for read A
-          outDataA <= input;
-        end if;
-        if regBSel = writeRegSel then  -- Bypass for read B
-          outDataB <= input;
-        end if;
+        registers(to_integer(unsigned(regSel))) <= inputData;  -- Write
       end if;
-    end if;
+    end if;	 
+	
   end process;
 end banco_regs;

@@ -2,7 +2,7 @@ SCHM0106
 
 HEADER
 {
- FREEID 4324
+ FREEID 4411
  VARIABLES
  {
   #ARCHITECTURE="Instruction_Execute_Stage"
@@ -621,7 +621,7 @@ HEADER
     #LANGUAGE="VHDL"
     #MODIFIED="1564081103"
     #NAME="Reg"
-    #PRAGMED_GENERICS="NumeroBits"
+    #PRAGMED_GENERICS="NumeroBits;"
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="76e76154-55e3-483e-9c06-1181994c1174"
    }
   }
@@ -1095,7 +1095,8 @@ PAGE ""
     #COMPONENT="deslocador_combinatorio"
     #CUSTOM_NAME=""
     #GENERIC0="NB : integer := 32"
-    #GENERIC1="NBD : integer := 32"
+    #GENERIC1="Tprop : time := 0 ns"
+    #GENERIC2="NBD : integer := 2"
     #LIBRARY="#default"
     #NO_CONF="1"
     #PRAGMED_GENERICS="NB;Tprop;NBD"
@@ -1104,7 +1105,7 @@ PAGE ""
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="f3573e65-e2db-49e8-b46b-f880f88462a4"
    }
    COORD (540,440)
-   VERTEXES ( (4,1843), (6,1845), (2,1885) )
+   VERTEXES ( (4,1843), (2,1885), (6,4324) )
    PINPROP 2,"#PIN_STATE","0"
    PINPROP 4,"#PIN_STATE","0"
    PINPROP 6,"#PIN_STATE","0"
@@ -1570,10 +1571,6 @@ PAGE ""
   {
    COORD (760,420)
   }
-  VTX  1845, 0, 0
-  {
-   COORD (580,580)
-  }
   VTX  1846, 0, 0
   {
    COORD (1160,1060)
@@ -1655,11 +1652,6 @@ PAGE ""
   VTX  1898, 0, 0
   {
    COORD (580,720)
-  }
-  BUS  1899, 0, 0
-  {
-   NET 191
-   VTX 1845, 1898
   }
   VTX  1900, 0, 0
   {
@@ -2287,6 +2279,8 @@ PAGE ""
     #COMPONENT="Somador"
     #CUSTOM_NAME=""
     #GENERIC0="NumeroBits : integer := 32"
+    #GENERIC1="Tsoma : time := 0 ns"
+    #GENERIC2="Tinc : time := 0 ns"
     #LIBRARY="#default"
     #PRAGMED_GENERICS="NumeroBits;Tsoma;Tinc"
     #REFERENCE="U5"
@@ -3419,6 +3413,15 @@ PAGE ""
    MARGINS (1,1)
    PARENT 4288
   }
+  VTX  4324, 0, 0
+  {
+   COORD (580,580)
+  }
+  BUS  4325, 0, 0
+  {
+   NET 191
+   VTX 1898, 4324
+  }
  }
  
 }
@@ -3444,7 +3447,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  4307, 0, 0
+  TEXT  4394, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -3455,7 +3458,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  4308, 0, 0
+  TEXT  4395, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -3466,7 +3469,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  4309, 0, 0
+  TEXT  4396, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -3476,7 +3479,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  4310, 0, 0
+  TEXT  4397, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -3488,7 +3491,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  4311, 0, 0
+  TEXT  4398, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -3501,7 +3504,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  4312, 0, 0
+  TEXT  4399, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -3511,7 +3514,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  4313, 0, 0
+  TEXT  4400, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -3523,7 +3526,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  4314, 0, 0
+  TEXT  4401, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -3533,7 +3536,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  4315, 0, 0
+  TEXT  4402, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -3544,7 +3547,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  4316, 0, 0
+  GROUP  4403, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -3556,7 +3559,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  4317, 0, 0
+  GROUP  4404, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -3568,7 +3571,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  4318, 0, 0
+  GROUP  4405, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -3580,7 +3583,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  4319, 0, 0
+  GROUP  4406, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -3592,7 +3595,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  4320, 0, 0
+  GROUP  4407, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -3604,7 +3607,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  4321, 0, 0
+  GROUP  4408, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -3615,7 +3618,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  4322, 0, 0
+  GROUP  4409, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -3626,7 +3629,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  4323, 0, 0
+  BMPPICT  4410, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

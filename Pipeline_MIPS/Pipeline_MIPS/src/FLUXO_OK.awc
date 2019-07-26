@@ -1,0 +1,57 @@
+<config>
+    <version>
+        2.1
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="LOCAL___b75a3a5d9c6e212f4100">FLUXO_OK.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+        <signal>/Pipeline_fluxoDados/clk</signal>
+        <signal>/Pipeline_fluxoDados/PCSrc</signal>
+        <signal>/Pipeline_fluxoDados/regWrite</signal>
+        <signal>/Pipeline_fluxoDados/U2/U1/registers</signal>
+        <signal>/Pipeline_fluxoDados/OutEX</signal>
+        <signal>/Pipeline_fluxoDados/OutID</signal>
+        <signal>/Pipeline_fluxoDados/OutIF</signal>
+        <signal>/Pipeline_fluxoDados/OutMEM</signal>
+        <signal>/Pipeline_fluxoDados/PC</signal>
+        <signal>/Pipeline_fluxoDados/regDst</signal>
+        <signal>/Pipeline_fluxoDados/regDstData</signal>
+        <signal>/Pipeline_fluxoDados/U3/ext_Immed_off</signal>
+        <signal>/Pipeline_fluxoDados/U3/PC_mais_quatro</signal>
+        <signal>/Pipeline_fluxoDados/U3/pc_branch_inicial</signal>
+        <signal>/Pipeline_fluxoDados/U3/PC_branch_final</signal>
+        <signal>/Pipeline_fluxoDados/U1/INST</signal>
+        <signal>/Pipeline_fluxoDados/U1/PC_in</signal>
+        <signal>/Pipeline_fluxoDados/U1/PC_mais_quatro</signal>
+        </signallist>
+    </signallists>
+    <prefbases>
+        <prefbase id="0" >
+            <pref name="End Time" value="1645008" />
+            <pref name="Start Time" value="0" />
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="1205000" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+</config>

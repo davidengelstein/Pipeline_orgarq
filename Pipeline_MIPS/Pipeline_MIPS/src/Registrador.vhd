@@ -50,14 +50,14 @@ begin
 	-- Section above this comment may be overwritten according to
 	-- "Update sensitivity list automatically" option status
 	begin
-		if rising_edge(C) then  -- Clock na borda de subida
+		if falling_edge(C) then  -- Clock na borda de subida
 			if CE = '1' then
 				qi <= D;
 			else
 				null;
 			end if;
 		end if;	  
-		Q <= qi;
 	end process;
-
+	
+	Q <= qi after Tprop;
 end Reg;
